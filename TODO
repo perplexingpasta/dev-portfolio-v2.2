@@ -1,3 +1,7 @@
+finish up implementing mode toggle
+
+
+OPTIMIZATION:
 use next image component
 compress images; use webp images
 specificy image height & width
