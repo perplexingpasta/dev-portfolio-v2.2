@@ -1,0 +1,13 @@
+use next image component
+compress images; use webp images
+specificy image height & width
+
+dynamic imports for heavy components
+use react's lazy & suspense
+use PurgeCss to remove unused CSS
+
+optimize & preload fonts
+minimize js by tree shaking
+
+implement server side rendering
+use a CDN to serve static assets
