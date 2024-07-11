@@ -1,8 +1,8 @@
 finish up implementing mode toggle
-
+change email in bento grid
 
 OPTIMIZATION:
-use next image component
+use next image component after deploying (in BentoGrid around line 60)
 compress images; use webp images
 specificy image height & width
 

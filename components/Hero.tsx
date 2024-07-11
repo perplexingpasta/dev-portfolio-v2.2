@@ -35,7 +35,7 @@ const Hero = () => {
             words="Transforming Concepts into Seamless User Experiences"
           />
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Salut je suis Rishabh, un développeur NextJS basé en Inde
+            yooooooooooooooooooo wassssssssssuppp
           </p>
 
           <a href="#about">
