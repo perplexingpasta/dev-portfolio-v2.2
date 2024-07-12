@@ -2,8 +2,17 @@ finish up implementing mode toggle
 change email in bento grid
 put onclick property on recent projects so that they open up in new tab
 
+implement form, calendly
+finish optimization
+put pixel or google analytics
+do seo
+
+First build your design and then watch Bonus-4 of 01-Foundations of Imperium Agency Incubator and also have a look at https://runneragency.com/ in bookmarks.
+
+
+----------------------------------------------------------------------------------------
 OPTIMIZATION:
-use next image component after deploying (in BentoGrid around line 60)
+use next image component after deploying
 compress images; use webp images
 specificy image height & width
 
