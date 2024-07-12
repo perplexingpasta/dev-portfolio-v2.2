@@ -1,9 +1,12 @@
 import Approach from "@/components/Approach";
+import BackgroundBeamsDemo from "@/components/BackgroundBeamsDemo";
 import Clients from "@/components/Clients";
 import Experience from "@/components/Experience";
 import Footer from "@/components/Footer";
 import Grid from "@/components/Grid";
-import Hero from "@/components/Hero";
+import Hero2 from "@/components/Hero2";
+import { HeroHighlightDemo } from "@/components/HeroHighlightDemo";
+import Pleiades from "@/components/Pleiades";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { ModeToggle } from "@/components/ui/ModeToggle";
@@ -16,12 +19,14 @@ export default function Home() {
         <div className="max-w-7xl w-full">
           {/* <ModeToggle /> */}
           <FloatingNav navItems={navItems} />
-          <Hero />
-          <Grid />
+          <Hero2 />
+          {/* <HeroHighlightDemo /> */}
+          <section className="mt-40" ><Grid /></section>
           <RecentProjects />
           <Clients />
           <Experience />
-          <Approach />
+          <Pleiades />
+          {/* <BackgroundBeamsDemo /> */}
           <Footer />
         </div>
       </div>

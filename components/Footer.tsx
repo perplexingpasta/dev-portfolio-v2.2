@@ -22,7 +22,7 @@ const Footer = () => {
           Reach out to me today ad let&apos;s discuss how I can help you achieve
           your goals.
         </p>
-        <a href="mailto:rishabh@celesteconsulting.in">
+        <a href="mailto:hello@celesteconsulting.in">
           <MagicButton
             title="Let's get in touch"
             icon={<FaLocationArrow />}
@@ -33,7 +33,7 @@ const Footer = () => {
 
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Celeste Consulting
+          Copyright © 2024 Céleste Consulting
         </p>
 
         <div className="flex items-center md:gap-3 gap-6 pt-5 md:pt-0">
