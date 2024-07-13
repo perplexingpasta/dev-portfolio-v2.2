@@ -28,7 +28,7 @@ const Hero = () => {
         <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
       </div>
 
-      <div className="flex justify-center relative my-20 z-10">
+      <div className="flex justify-center relative md:my-20 my-5 z-10">
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           {/* <h1 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Dynamic Web Magic with Next.js
@@ -36,23 +36,26 @@ const Hero = () => {
 
           <TextGenerateEffect
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Helping Dermatologists Acquire Consistent, Predictable & Loyal Patients"
+            words="Digital Marketing to Grow your Dermatology Practice"
+            // words="Helping Dermatologists Acquire Consistent, Predictable & Loyal Patients"
           />
           <p className="text-center md:tracking-wider my-10 md:mt-14 text-base md:text-lg lg:text-2xl">
             Hi! We&apos;re Céleste Consulting ✨
+            <br /> We help Dermatologists with Consistent, Predictable & Loyal
+            Patient Acquisition
           </p>
 
-          {/* <a href="#about">
+          <a href="#contact">
             <MagicButton
-              title="Show our work"
+              title="BOOK A CALL NOW"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a> */}
+          </a>
         </div>
 
         {/* SCROLLBUTTON */}
-        <div className="absolute xs:bottom-10 top-full mt-32 w-full flex justify-center items-center">
+        <div className="absolute xs:bottom-10 top-full md:mt-32 mt-16 w-full flex justify-center items-center">
           <a href="#about">
             <div className="w-9 h-16 rounded-3xl border-4 border-white-100 flex justify-center items-start p-2">
               <motion.div

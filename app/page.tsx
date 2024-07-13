@@ -8,8 +8,10 @@ import Hero2 from "@/components/Hero2";
 import { HeroHighlightDemo } from "@/components/HeroHighlightDemo";
 import Pleiades from "@/components/Pleiades";
 import RecentProjects from "@/components/RecentProjects";
+import { SparklesPreview } from "@/components/SparklesPreview";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import { ModeToggle } from "@/components/ui/ModeToggle";
+import Whatsapp from "@/components/Whatsapp";
 import { navItems } from "@/data";
 
 export default function Home() {
@@ -26,7 +28,8 @@ export default function Home() {
           <Clients />
           <Experience />
           <Pleiades />
-          {/* <BackgroundBeamsDemo /> */}
+          <BackgroundBeamsDemo />
+          <Whatsapp />
           <Footer />
         </div>
       </div>
