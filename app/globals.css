@@ -119,3 +119,9 @@
     font-size: 22px;
   }
 }
+
+/* MY OWN CLASSES */
+/* THIS CONTROLS TEXT HIGHLIGHTING */
+::selection {
+  @apply bg-purpledark text-white;
+}

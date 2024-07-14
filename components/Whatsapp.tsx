@@ -17,7 +17,7 @@ const Whatsapp = () => {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           transform="rotate(0)"
-          className="w-4/5 mx-auto pt-[6px] pl-[1px]"
+          className="w-4/6 mx-auto md:pt-[0.65rem] pt-[0.4rem] pl-[0.1rem] md:pl-[0.2rem]"
         >
           <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
           <g

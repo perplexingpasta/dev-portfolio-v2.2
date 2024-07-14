@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   title: "Céleste Consulting",
   description:
     "Consistent, predictable & loyal patients for your derma practice.",
+  icons: {
+    icon: ["/favicon.ico"],
+    apple: ["/apple-touch-icon.png"],
+    shortcut: ["/apple-touch-icon.png"],
+  },
 };
 
 export default function RootLayout({
@@ -21,7 +26,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
@@ -31,4 +36,3 @@ export default function RootLayout({
     </html>
   );
 }
-

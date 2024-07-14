@@ -9,7 +9,16 @@ added colored tiles in bento ✅
 added sparkles in bento ✅
 whatsapp integration ✅
 
-can add a do you struggle section
+tried to add favicon ✅
+fixed floating navbar in mobile ✅
+added mode toggle in navbar ✅
+universal text selection to purple ✅
+added prettier tailwind classes sorter ✅
+implemented light mode in navbar, hero ✅
+fix navbar, it moves away very quickly ✅
+
+add RJ at the bottom
+can add a "do you struggle" section
 services in the form of cards
 in pleiades show 5 steps and put CTA
 
@@ -23,6 +32,9 @@ finish optimization
 put google analytics
 do seo
 
+----------------------------------------------------------------------------------------
+DO AT LAST
+change href link in celeste consulting <a> in footer to actual domain
 
 ----------------------------------------------------------------------------------------
 OPTIMIZATION:

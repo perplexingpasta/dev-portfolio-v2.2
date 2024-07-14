@@ -7,57 +7,79 @@ import LitUpButton from "./ui/LitUpButton";
 import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
+import { HeroHighlightDemo } from "./HeroHighlightDemo";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36">
-      <div>
+    <div className="pb-20 pt-36" id="index">
+      {/* SPOTLIGHTS */}
+      <div className="hidden dark:block">
         <Spotlight
-          className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
+          className="-left-10 -top-40 h-screen md:-left-32 md:-top-20"
           fill="white"
         />
         <Spotlight
-          className="top-10 left-full h-[80vh] w-[50vw]"
+          className="left-full top-10 h-[80vh] w-[50vw]"
           fill="purple"
         />
-        <Spotlight className="top-28 left-80 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
       </div>
 
-      <div className="h-screen w-full dark:bg-black-100 bg-white dark:bg-grid-white/[0.05] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+      {/* GRID/DOT BACKGROUND */}
+      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.05]">
         {/* Radial gradient for the container to give a faded look */}
-        <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black-100 bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]" />
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
       </div>
 
-      <div className="flex justify-center relative md:my-20 my-5 z-10">
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+      <div className="relative z-10 my-5 flex justify-center md:my-12">
+        <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vw]">
           {/* <h1 className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
             Dynamic Web Magic with Next.js
           </h1> */}
 
-          <TextGenerateEffect
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
-            words="Digital Marketing to Grow your Dermatology Practice"
-            // words="Helping Dermatologists Acquire Consistent, Predictable & Loyal Patients"
-          />
-          <p className="text-center md:tracking-wider my-10 md:mt-14 text-base md:text-lg lg:text-2xl">
-            Hi! We&apos;re Céleste Consulting ✨
+          {/* HERO BIG TEXT */}
+          <div className="mx-auto hidden max-w-4xl px-4 dark:block lg:mb-10">
+            <TextGenerateEffect
+              className="text-center text-[40px] md:text-5xl lg:text-6xl"
+              words="Digital Marketing to Grow your Dermatology Practice"
+              // words="Helping Dermatologists Acquire Consistent, Predictable & Loyal Patients"
+            />
+          </div>
+          <div className="block dark:hidden lg:mb-10">
+            <HeroHighlightDemo />
+
+            {/* HI WE ARE */}
+          </div>
+          <p className="my-10 text-center text-base md:mt-14 md:text-lg md:tracking-wider lg:text-2xl">
+            Hi! We&apos;re{" "}
+            <span className="font-semibold">Céleste Consulting</span> ✨
             <br /> We help Dermatologists with Consistent, Predictable & Loyal
             Patient Acquisition
           </p>
 
+          {/* CTA BUTTONS */}
           <a href="#contact">
-            <MagicButton
-              title="BOOK A CALL NOW"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
+            <div className="hidden dark:block">
+              <MagicButton
+                title="BOOK A CALL NOW"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </div>
+            <div className="block dark:hidden">
+              <LitUpButton
+                title="BOOK A CALL NOW"
+                icon={<FaLocationArrow />}
+                position="right"
+              />
+            </div>
           </a>
         </div>
 
         {/* SCROLLBUTTON */}
-        <div className="absolute xs:bottom-10 top-full md:mt-32 mt-16 w-full flex justify-center items-center">
+        <div className="xs:bottom-10 absolute top-full mt-16 flex w-full items-center justify-center md:mt-32">
           <a href="#about">
-            <div className="w-9 h-16 rounded-3xl border-4 border-white-100 flex justify-center items-start p-2">
+            <div className="flex h-16 w-9 items-start justify-center rounded-3xl border-4 border-black-100 p-2 dark:border-white-100">
               <motion.div
                 animate={{
                   y: [0, 24, 0],
@@ -67,7 +89,7 @@ const Hero = () => {
                   repeat: Infinity,
                   repeatType: "loop",
                 }}
-                className="w-3 h-3 rounded-full bg-white-100"
+                className="h-3 w-3 rounded-full bg-black-100 dark:bg-white-100"
               />
             </div>
           </a>

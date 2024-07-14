@@ -23,7 +23,7 @@ export const TextGenerateEffect = ({
       {
         duration: 3,
         delay: stagger(0.3),
-      }
+      },
     );
   }, [scope.current]);
 
@@ -35,8 +35,11 @@ export const TextGenerateEffect = ({
             <motion.span
               key={word + idx}
               // change here if idx is greater than 3, change the text color to #CBACF9
-              className={` ${idx < 7 && idx > 4 ? "text-purple" : "dark:text-white text-black"
-                } opacity-0`}
+              className={` ${
+                idx < 7 && idx > 4
+                  ? "text-purpledark dark:text-purple"
+                  : "text-black dark:text-white"
+              } opacity-0`}
             >
               {word}{" "}
             </motion.span>
@@ -47,11 +50,9 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <span className={cn("font-black uppercase", className)}>
-      {/* mt-4 to my-4 */}
+    <span className={cn("font-black uppercase ", className)}>
       <span className="my-4">
-        {/* remove  text-2xl from the original */}
-        <span className=" dark:text-white text-black leading-snug tracking-wide">
+        <span className="leading-snug tracking-wide  text-black dark:text-white">
           {renderWords()}
         </span>
       </span>

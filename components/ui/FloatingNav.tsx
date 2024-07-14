@@ -8,6 +8,7 @@ import {
 } from "framer-motion";
 import { cn } from "@/utils/cn";
 import Link from "next/link";
+import { ModeToggle } from "./ModeToggle";
 
 export const FloatingNav = ({
   navItems,
@@ -29,7 +30,7 @@ export const FloatingNav = ({
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.05) {
+      if (scrollYProgress.get() < 0.01) {
         setVisible(false);
       } else {
         if (direction < 0) {
@@ -42,37 +43,44 @@ export const FloatingNav = ({
   });
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        initial={{
-          opacity: 1,
-          y: -100,
-        }}
-        animate={{
-          y: visible ? 0 : -100,
-          opacity: visible ? 1 : 0,
-        }}
-        transition={{
-          duration: 0.2,
-        }}
-        className={cn(
-          "flex max-w-fit  fixed top-10 inset-x-0 mx-auto border border-transparent dark:border-white/[0.2] rounded-full dark:bg-black-100 bg-white shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-[5000] px-10 py-5 items-center justify-center space-x-4",
-          className
-        )}
-      >
-        {navItems.map((navItem: any, idx: number) => (
-          <Link
-            key={`link=${idx}`}
-            href={navItem.link}
-            className={cn(
-              "relative dark:text-neutral-50 items-center flex space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
-            )}
-          >
-            <span className="block sm:hidden">{navItem.icon}</span>
-            <span className="text-sm !cursor-pointer">{navItem.name}</span>
-          </Link>
-        ))}
-      </motion.div>
-    </AnimatePresence>
+    <>
+      <AnimatePresence mode="wait">
+        <motion.div
+          initial={{
+            opacity: 1,
+            y: -100,
+          }}
+          animate={{
+            y: visible ? 0 : -100,
+            opacity: visible ? 1 : 0,
+          }}
+          transition={{
+            duration: 0.2,
+          }}
+          className={cn(
+            "fixed inset-x-0 top-10 z-[500] mx-auto flex max-w-fit items-center justify-center space-x-4 rounded-full border border-black-100/[0.2] bg-white px-5 py-5 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark:border-white/[0.2] dark:bg-black-100 md:space-x-5 md:px-10",
+            className,
+          )}
+        >
+          {navItems.map((navItem: any, idx: number) => (
+            <Link
+              key={`link=${idx}`}
+              href={navItem.link}
+              className={cn(
+                "relative flex items-center font-semibold text-neutral-600 hover:text-purpledark dark:font-normal dark:text-neutral-50 dark:hover:text-purple md:space-x-3",
+              )}
+            >
+              <span className="block sm:hidden">{navItem.icon}</span>
+              <span className="!cursor-pointer text-sm md:text-lg md:uppercase">
+                {navItem.name}
+              </span>
+            </Link>
+          ))}
+          <div className="z-[1000] hidden md:block">
+            <ModeToggle />
+          </div>
+        </motion.div>
+      </AnimatePresence>
+    </>
   );
 };
