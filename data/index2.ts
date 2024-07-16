@@ -6,39 +6,6 @@ export const navItems = [
 ];
 
 export const gridItems = [
-  // {
-  //   id: 1,
-  //   title: "I prioritize client collaboration, fostering open communication ",
-  //   description: "",
-  //   className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-  //   imgClassName: "w-full h-full",
-  //   titleClassName: "justify-end",
-  //   img: "/b1.svg",
-  //   spareImg: "",
-  // },
-  // {
-  //   id: 2,
-  //   title: "We're very flexible with time zone communications",
-  //   description: "",
-  //   className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-  //   imgClassName: "",
-  //   titleClassName: "justify-start",
-  //   img: "",
-  //   spareImg: "",
-  // },
-  // {
-  //   id: 3,
-  //   title: "Our tech stack",
-  //   description: "I constantly try to improve",
-  //   className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-  //   imgClassName: "",
-  //   titleClassName: "justify-center",
-  //   img: "",
-  //   spareImg: "",
-  // },
-
-// CHANGES TO FIX MD VIEW
-
   {
     // SPARKLES
     id: 4,
@@ -75,6 +42,33 @@ export const gridItems = [
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
     spareImg: "",
+  },
+];
+
+export const services = [
+  {
+    id: 1,
+    title: "Professional Website Development",
+    des: "All our websites are hand-coded by our experienced team of web developers. It looks so good that you won't stop talking about it to all your friends. Guaranteed.",
+    img: "/p1.svg",
+  },
+  {
+    id: 2,
+    title: "Ad Management & Digital Marketing",
+    des: "We help you generate consistent, predictable and scalable leads by running targeted ad campaigns for your ideal patient demographic which helps achieve a loyal patient inflow all the time.",
+    img: "/p2.svg",
+  },
+  {
+    id: 3,
+    title: "Front Office Helper",
+    des: "Turn your front office staff into a medical sales machine that never misses a new lead with our proprietary software Orion which is built specifically for dermatological practices like yours.",
+    img: "/p3.svg",
+  },
+  {
+    id: 4,
+    title: "Google Maps & Reviews Manager",
+    des: "We boost your local listing on Google Maps and improve your Google Business Page. We also help you get more 5 star reviews from your satisfied patients by database reactivation.",
+    img: "/p4.svg",
   },
 ];
 

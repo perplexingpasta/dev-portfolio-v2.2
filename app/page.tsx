@@ -6,6 +6,7 @@ import Grid from "@/components/Grid";
 import Hero2 from "@/components/Hero2";
 import Pleiades from "@/components/Pleiades";
 import RecentProjects from "@/components/RecentProjects";
+import Services from "@/components/Services";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Whatsapp from "@/components/Whatsapp";
 import { navItems } from "@/data";
@@ -17,8 +18,10 @@ export default function Home() {
         <div className="max-w-7xl w-full">
           <FloatingNav navItems={navItems} />
           <Hero2 />
-          <section className="mt-40" ><Grid /></section>
-          <RecentProjects />
+          <Grid />
+          <Services />
+          {/* <section className="mt-40" ></section> */}
+          {/* <RecentProjects /> */}
           <Clients />
           <Experience />
           <Pleiades />

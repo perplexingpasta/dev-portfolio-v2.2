@@ -37,7 +37,8 @@ export const TextGenerateEffect = ({
               // change here if idx is greater than 3, change the text color to #CBACF9
               className={` ${
                 idx < 7 && idx > 4
-                  ? "text-purpledark dark:text-purple"
+                  // ? "text-purpledark dark:text-purple"
+                  ? "gradient-text animate-gradient text-transparent"
                   : "text-black dark:text-white"
               } opacity-0`}
             >

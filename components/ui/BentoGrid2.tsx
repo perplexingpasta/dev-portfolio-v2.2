@@ -79,7 +79,6 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
         
         {/* ID 4 SPARKLED */}
@@ -105,9 +104,6 @@ export const BentoGridItem = ({
           >
             {title}
           </div>
-
-          {/* for the github 3d globe */}
-          {/* {id === 2 && <GridGlobe />} */}
 
           {id === 6 && (
             <div className="md:mt-0 mt-5 relative">

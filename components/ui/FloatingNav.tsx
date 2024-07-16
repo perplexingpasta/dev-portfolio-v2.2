@@ -23,15 +23,15 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
 
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
     if (typeof current === "number") {
       let direction = current! - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.01) {
-        setVisible(false);
+      if (scrollYProgress.get() < 0.02) {
+        setVisible(true);
       } else {
         if (direction < 0) {
           setVisible(true);
@@ -58,20 +58,25 @@ export const FloatingNav = ({
             duration: 0.2,
           }}
           className={cn(
-            "fixed inset-x-0 top-10 z-[500] mx-auto flex max-w-fit items-center justify-center space-x-4 rounded-full border border-black-100/[0.2] bg-white px-5 py-5 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark:border-white/[0.2] dark:bg-black-100 md:space-x-5 md:px-10",
+            "fixed inset-x-0 top-10 z-[500] mx-auto flex max-w-fit items-center justify-center space-x-4 rounded-full border bg-white border-black-100/[0.2] px-5 py-3 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] dark:border dark:border-white-100/[0.2] dark:bg-black-100 dark:bg-opacity-75 dark:backdrop-blur-2xl dark:backdrop-filter md:space-x-5 md:px-8",
             className,
           )}
+          // style={{
+          //   backdropFilter: "blur(16px) saturate(180%)",
+          //   backgroundColor: "rgba(0, 3, 25, 0.75)",
+          //   border: "1px solid rgba(255, 255, 255, 0.125)",
+          // }}
         >
           {navItems.map((navItem: any, idx: number) => (
             <Link
               key={`link=${idx}`}
               href={navItem.link}
               className={cn(
-                "relative flex items-center font-semibold text-neutral-600 hover:text-purpledark dark:font-normal dark:text-neutral-50 dark:hover:text-purple md:space-x-3",
+                "relative flex items-center font-semibold text-black-100 hover:text-purpledark dark:font-normal dark:text-neutral-50 dark:hover:text-purple md:space-x-1",
               )}
             >
               <span className="block sm:hidden">{navItem.icon}</span>
-              <span className="!cursor-pointer text-sm md:text-lg md:uppercase">
+              <span className="!cursor-pointer text-xs md:text-sm md:uppercase">
                 {navItem.name}
               </span>
             </Link>

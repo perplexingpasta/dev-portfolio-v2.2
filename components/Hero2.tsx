@@ -15,14 +15,17 @@ const Hero = () => {
       {/* SPOTLIGHTS */}
       <div className="hidden dark:block">
         <Spotlight
-          className="-left-10 -top-40 h-screen md:-left-32 md:-top-20"
+          className="top-16 h-screen md:-left-32 md:-top-20"
           fill="white"
         />
         <Spotlight
-          className="left-full top-10 h-[80vh] w-[50vw]"
+          className="left-full top-1 h-[70vh] md:left-full md:top-10 md:h-[80vh] md:w-[50vw]"
           fill="purple"
         />
-        <Spotlight className="left-80 top-28 h-[80vh] w-[50vw]" fill="blue" />
+        <Spotlight
+          className="left-80 top-52 h-[80vh] md:left-80 md:top-28 md:w-[50vw]"
+          fill="blue"
+        />
       </div>
 
       {/* GRID/DOT BACKGROUND */}
@@ -39,17 +42,23 @@ const Hero = () => {
 
           {/* HERO BIG TEXT */}
           <div className="mx-auto hidden max-w-4xl px-4 dark:block lg:mb-10">
-            <TextGenerateEffect
+            <h1 className="text-center text-4xl font-extrabold uppercase tracking-wide text-white md:text-5xl md:!leading-tight lg:text-6xl lg:!leading-snug">
+              Digital Marketing to Grow your{" "}
+              <span className="gradient-text animate-gradient font-black text-transparent">
+                Dermatology Practice
+              </span>
+            </h1>
+            {/* <TextGenerateEffect
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
               words="Digital Marketing to Grow your Dermatology Practice"
               // words="Helping Dermatologists Acquire Consistent, Predictable & Loyal Patients"
-            />
+            /> */}
           </div>
           <div className="block dark:hidden lg:mb-10">
             <HeroHighlightDemo />
-
-            {/* HI WE ARE */}
           </div>
+
+          {/* HI WE ARE */}
           <p className="my-10 text-center text-base md:mt-14 md:text-lg md:tracking-wider lg:text-2xl">
             Hi! We&apos;re{" "}
             <span className="font-semibold">Céleste Consulting</span> ✨
@@ -77,9 +86,9 @@ const Hero = () => {
         </div>
 
         {/* SCROLLBUTTON */}
-        <div className="xs:bottom-10 absolute top-full mt-16 flex w-full items-center justify-center md:mt-32">
+        <div className="xs:bottom-10 absolute top-full flex w-full items-center justify-center mt-32">
           <a href="#about">
-            <div className="flex h-16 w-9 items-start justify-center rounded-3xl border-4 border-black-100 p-2 dark:border-white-100">
+            <div className="flex h-12 w-6 items-start justify-center rounded-3xl border-2 border-black-100 dark:border-white-100 md:h-16 md:w-9 md:border-4 md:p-2">
               <motion.div
                 animate={{
                   y: [0, 24, 0],
@@ -89,7 +98,7 @@ const Hero = () => {
                   repeat: Infinity,
                   repeatType: "loop",
                 }}
-                className="h-3 w-3 rounded-full bg-black-100 dark:bg-white-100"
+                className="h-[0.7rem] w-[0.7rem] rounded-full bg-black-100 dark:bg-white-100 md:h-3 md:w-3"
               />
             </div>
           </a>

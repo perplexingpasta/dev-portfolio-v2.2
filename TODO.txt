@@ -17,12 +17,17 @@ added prettier tailwind classes sorter ✅
 implemented light mode in navbar, hero ✅
 fix navbar, it moves away very quickly ✅
 
-add RJ at the bottom
-can add a "do you struggle" section
-services in the form of cards
-in pleiades show 5 steps and put CTA
+added services section ✅
+glass dysmorphism in navbar ✅
+navbar shows at top ✅
+added apple gradient to hero text and removed text generate effect ✅
+fix spotlights in hero in mobile ✅
 
-fix spotlights in hero in mobile
+add RJ at the bottom
+in pleiades show 5 steps and put CTA
+remove navbar in mobile; use hamburger instead
+
+setup multi page routing with next js by watching JSM website faster
 change font
 finish up implementing mode toggle
 put onclick property on recent projects so that they open up in new tab

@@ -68,7 +68,7 @@
 
 @layer base {
   * {
-    @apply border-border !scroll-smooth;
+    @apply !scroll-smooth border-border;
   }
   body {
     @apply bg-background text-foreground;
@@ -80,7 +80,7 @@
 
 @layer utilities {
   .heading {
-    @apply font-bold text-4xl md:text-5xl text-center;
+    @apply text-center text-4xl font-bold md:text-5xl;
   }
 }
 
@@ -123,5 +123,41 @@
 /* MY OWN CLASSES */
 /* THIS CONTROLS TEXT HIGHLIGHTING */
 ::selection {
-  @apply bg-purpledark text-white;
+  @apply bg-indigo-400 text-white;
+}
+
+.gradient-text {
+  /* background: linear-gradient(
+    to right,
+    #a855f7,
+    #ec4899,
+    #eab308,
+    #ec4899,
+    #a855f7,
+    #ec4899,
+    #eab308
+  ); */
+  
+  /* background: linear-gradient(
+    to right,
+    #6366f1,
+    #a5b4fc,
+    #CBACF9,
+    #a5b4fc,
+    #6366f1,
+    #a5b4fc,
+    #CBACF9
+  ); */
+
+  background: linear-gradient(
+    to right,
+    #4338ca,
+    #6366f1,
+    #8b5cf6,
+    #6366f1,
+    #4338ca,
+    #6366f1
+    );
+    background-size: 500% 500%;
+  background-clip: text;
 }
