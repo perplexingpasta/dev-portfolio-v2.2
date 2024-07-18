@@ -5,26 +5,28 @@ import Footer from "@/components/Footer2";
 import Grid from "@/components/Grid";
 import Hero2 from "@/components/Hero2";
 import Pleiades from "@/components/Pleiades";
+import Pricing from "@/components/Pricing";
 import RecentProjects from "@/components/RecentProjects";
 import Services from "@/components/Services";
 import { FloatingNav } from "@/components/ui/FloatingNav";
 import Whatsapp from "@/components/Whatsapp";
-import { navItems } from "@/data";
+import { navItems } from "@/data/index2";
 
 export default function Home() {
   return (
     <main>
-      <div className="relative bg-black-100 flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
+      <div className="relative dark:bg-black-100 bg-white flex justify-center items-center flex-col mx-auto sm:px-10 px-5 overflow-clip">
         <div className="max-w-7xl w-full">
           <FloatingNav navItems={navItems} />
           <Hero2 />
           <Grid />
           <Services />
-          {/* <section className="mt-40" ></section> */}
           {/* <RecentProjects /> */}
           <Clients />
           <Experience />
-          <Pleiades />
+          <Pricing />
+          {/* <Pleiades /> */}
+          {/* <PricingContainer /> */}
           {/* <BackgroundBeamsDemo /> */}
           <Whatsapp />
           <Footer />

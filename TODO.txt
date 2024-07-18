@@ -23,11 +23,17 @@ navbar shows at top ✅
 added apple gradient to hero text and removed text generate effect ✅
 fix spotlights in hero in mobile ✅
 
+light mode in services ✅
+pricing main section ✅
+
 add RJ at the bottom
+pricing detailed section
 in pleiades show 5 steps and put CTA
 remove navbar in mobile; use hamburger instead
+make 404 page
+add a privacy page
 
-setup multi page routing with next js by watching JSM website faster
+add meta tags in html and then check on opengraph.xyz3
 change font
 finish up implementing mode toggle
 put onclick property on recent projects so that they open up in new tab

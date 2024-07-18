@@ -67,7 +67,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
 }) => {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="group/card relative h-full w-auto rounded-xl border border-black/[0.1] bg-gray-50 p-6 dark:border-white/[0.2] dark:bg-black-100 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
+      <CardBody className="group/card relative h-full w-auto rounded-xl p-6 dark:border dark:border-white/[0.2] dark:bg-black-100 dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]">
         <CardItem translateZ="100" className="w-full">
           <img
             src={img}
@@ -77,14 +77,14 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         </CardItem>
         <CardItem
           translateZ="50"
-          className="pt-12 text-xl font-bold text-neutral-600 dark:text-white"
+          className="pt-12 text-2xl font-medium uppercase text-black-100 dark:text-white"
         >
           {title}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="mt-2 text-sm text-neutral-500 dark:text-neutral-300"
+          className="mt-2 text-lg text-neutral-800 dark:text-neutral-300"
         >
           {des}
         </CardItem>

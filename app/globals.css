@@ -123,7 +123,7 @@
 /* MY OWN CLASSES */
 /* THIS CONTROLS TEXT HIGHLIGHTING */
 ::selection {
-  @apply bg-indigo-400 text-white;
+  @apply bg-black-100 dark:bg-indigo-400 text-white;
 }
 
 .gradient-text {
