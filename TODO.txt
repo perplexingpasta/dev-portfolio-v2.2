@@ -26,18 +26,24 @@ fix spotlights in hero in mobile ✅
 light mode in services ✅
 pricing main section ✅
 
-add RJ at the bottom
-pricing detailed section
-in pleiades show 5 steps and put CTA
+changed folder layout for routing ✅
+made 404 page ✅
+extended footer and included all links ✅
+added privacy policy ✅
+detailed pricing page ✅
+
 remove navbar in mobile; use hamburger instead
-make 404 page
-add a privacy page
+contact page
+about us page
+add svg beside bundle names in pricing
+add RJ at the bottom
+in pleiades show 5 steps and put CTA
 
 add meta tags in html and then check on opengraph.xyz3
 change font
 finish up implementing mode toggle
-put onclick property on recent projects so that they open up in new tab
 
+cookie accept
 implement form, calendly
 finish optimization
 put google analytics

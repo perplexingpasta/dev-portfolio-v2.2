@@ -6,9 +6,9 @@ import { ThemeProvider } from "./provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Céleste Consulting",
+  title: "Celeste Consulting",
   description:
-    "Consistent, predictable & loyal patients for your derma practice.",
+    "Helping Dermatologists with Consistent, Predictable & Loyal Patient Acquisition.",
   icons: {
     icon: ["/favicon.ico"],
     apple: ["/apple-touch-icon.png"],

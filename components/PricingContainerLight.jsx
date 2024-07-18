@@ -28,7 +28,7 @@ const PricingContainerLight
       <Group sx={{ zIndex: 50 }}>
         <Stack spacing={40}>
           {/** header section */}
-          <Flex direction="column" gap={10} align="center" justify="start">
+          {/* <Flex direction="column" gap={10} align="center" justify="start">
             <Box
               sx={{
                 fontWeight: 700,
@@ -57,7 +57,7 @@ const PricingContainerLight
               />
               <Text fz={"sm"}>Semi-Annually</Text>
             </Box>
-          </Flex>
+          </Flex> */}
           {/** cards section */}
           <Group>
             <Flex
@@ -298,7 +298,7 @@ const PricingContainerLight
                         <polyline points="20 6 9 17 4 12" />
                       </svg>
                       <Text fz={"sm"} fw={600}>
-                        Facebook + Instagram Ad
+                        Facebook + Instagram Ads
                       </Text>
                     </div>
                     <Divider
