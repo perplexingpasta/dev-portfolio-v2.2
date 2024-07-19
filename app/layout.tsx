@@ -1,17 +1,16 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Montserrat, Lexend_Deca } from "next/font/google";
-// import Lexend from 'next/font/local';
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
 
-export const montserrat = Montserrat({
+const montserrat = Montserrat({
   subsets: ['latin'],
   display: 'swap',
 })
 
-export const lexenddeca = Lexend_Deca({
+const lexenddeca = Lexend_Deca({
   subsets: ['latin'],
   display: 'swap',
 })
