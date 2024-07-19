@@ -1,9 +1,21 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Montserrat, Lexend_Deca } from "next/font/google";
+// import Lexend from 'next/font/local';
 import "./globals.css";
 import { ThemeProvider } from "./provider";
 
-const inter = Inter({ subsets: ["latin"] });
+
+export const mont = Montserrat({
+  subsets: ['latin'],
+  display: 'swap',
+})
+
+export const lexenddeca = Lexend_Deca({
+  subsets: ['latin'],
+  display: 'swap',
+})
+
 
 export const metadata: Metadata = {
   title: "Celeste Consulting",
@@ -15,6 +27,9 @@ export const metadata: Metadata = {
     shortcut: ["/apple-touch-icon.png"],
   },
 };
+// inter, mont, lex, urbanist, outfit, lexmega, lexdeca, lextera
+// mont for hero h1
+// lexdeca for p text
 
 export default function RootLayout({
   children,
@@ -23,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={mont.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -31,6 +46,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <SpeedInsights />
         </ThemeProvider>
       </body>
     </html>

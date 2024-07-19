@@ -7,11 +7,6 @@ const Whatsapp = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        {/* <i className="fa fa-whatsapp whatsapp-icon" aria-hidden="true"></i> */}
-        {/* <picture>
-            <img src="./whatsapp.svg" width={50} alt="" className="justify-center items-center px-auto
-            mx-auto" />
-        </picture> */}
         <svg
           viewBox="0 0 24 24"
           fill="none"

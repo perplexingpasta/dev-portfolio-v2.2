@@ -97,7 +97,7 @@ const PricingFAQ = () => {
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   return (
-    <Accordion>
+    <Accordion className="font-lexendDeca">
       <AccordionItem
         key="1"
         aria-label="How are these suites ordered? What's the main difference?"
@@ -107,10 +107,10 @@ const PricingFAQ = () => {
         be with growing your practice and getting in more patients as a result.
         If you&apos;re unsure of our services or whether you&apos;ve got
         committment issues, we suggest you to try our{" "}
-        <span className="text-purple">Foundation Suite</span>. It&apos;s priced
+        <span className="dark:text-purple font-bold">Foundation Suite</span>. It&apos;s priced
         adeptly and you&apos;ll love it,guaranteed. But if you have the guts or
         are determined enough to succeed, we highly recommend you to go for the{" "}
-        <span className="text-purple">Professional Suite</span>. It&apos;s the
+        <span className="dark:text-purple font-bold">Professional Suite</span>. It&apos;s the
         best fr.
       </AccordionItem>
       <AccordionItem
@@ -196,8 +196,8 @@ const PricingFAQ = () => {
       >
         In our professional tiers, we provide strategy meetings, the frequency
         of which is monthly for the{" "}
-        <span className="text-purple">Professional Suite</span> and weekly fo
-        the <span className="text-purple">Master Suite</span>. Here you get to
+        <span className="dark:text-purple font-bold">Professional Suite</span> and weekly fo
+        the <span className="dark:text-purple font-bold">Master Suite</span>. Here you get to
         interact with our founders who also happen to be the web development
         manager and the ads manager. We discuss your goals, current trajectory,
         extrapolated trajectory and business concerns with them so that you can

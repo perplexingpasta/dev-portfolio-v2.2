@@ -13,9 +13,11 @@ import {
 } from "@mantine/core";
 import { useState } from "react";
 import Switch from "react-switch";
+// import PricingPreline from "./PricingPreline";
+import { PricingUnit, PricingUnitPro } from "./ui/PricingUnit";
+import Image from "next/image";
 
-const PricingContainerLight
- = () => {
+const PricingContainerDark = () => {
   const theme = useMantineTheme();
   const [monthly, setMonthly] = useState(false);
 
@@ -24,7 +26,7 @@ const PricingContainerLight
   };
 
   return (
-    <>
+    <div className="flex flex-col items-center justify-center">
       <Group sx={{ zIndex: 50 }}>
         <Stack spacing={40}>
           {/** header section */}
@@ -63,25 +65,21 @@ const PricingContainerLight
             <Flex
               align={"center"}
               direction={{ base: "column", sm: "row" }}
-              color={"hsl(232, 13%, 33%)"}
+              color={"white"}
               gap={{ base: "1.5rem", sm: 0 }}
             >
               {/* FOUNDATION SUITE */}
-              {/* <Box
+              <Box
+                className="bg-white pt-12 text-black-100 dark:border dark:border-white/[0.2] dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
                 sx={{
                   boxShadow: "0px 30px 50px -7px rgba(0,0,0,0.1)",
-                  height: "26rem",
-                  width: "19rem",
+                  height: "52rem",
+                  width: "20rem",
                   paddingInline: "1.5rem",
-                  backgroundColor:
-                    theme.colorScheme === "dark"
-                      ? theme.colors.dark[5]
-                      : "white",
                   borderRadius: "0.7rem 0 0 0.7rem",
                   display: "flex",
-                  alignItems: "center",
+                  alignItems: "start",
                   justifyContent: "center",
-
                   "@media (max-width: 755px)": {
                     width: "19rem",
                     borderRadius: "0.7rem",
@@ -93,25 +91,25 @@ const PricingContainerLight
                 }}
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
-                  <Text
-                    sx={{
-                      fontWeight: 700,
-                      color:
-                        theme.colorScheme === "dark"
-                          ? theme.colors.dark[1]
-                          : "hsl(233, 13%, 49%)",
-                    }}
-                    fz={"md"}
-                  >
-                    FOUNDATION SUITE
-                  </Text>
+                  <div className="flex flex-1 gap-1">
+                    <Image
+                      src="/plant-black.svg"
+                      alt=""
+                      height={20}
+                      width={20}
+                    />
+                    <Text
+                      sx={{
+                        fontWeight: 700,
+                      }}
+                      fz={"md"}
+                    >
+                      FOUNDATION SUITE
+                    </Text>
+                  </div>
                   <Title
                     order={2}
                     sx={{
-                      color:
-                        theme.colorScheme === "dark"
-                          ? "white"
-                          : "hsl(232, 13%, 33%)",
                       fontSize: 50,
                       display: "flex",
                       alignItems: "center",
@@ -119,115 +117,69 @@ const PricingContainerLight
                     }}
                   >
                     <Text fz={"2rem"}>₹</Text>
-                    {monthly ? "2740" : "2740"}
-                    <Text fz={"1rem"}>One Time</Text>
+                    {monthly ? "16,320" : "2,740"}
+                    {/* AT 22% DISCOUNT */}
+                    <Text fz={"2rem"}>/mo</Text>
+                    {/* <Text fz={"2rem"}>{monthly ? "/yr" : "/mo"}</Text> */}
                   </Title>
-                  <Stack
-                    w={"100%"}
-                    align="center"
-                    spacing={10}
-                    sx={{
-                      color:
-                        theme.colorScheme === "light" && "hsl(233, 13%, 49%)",
-                    }}
-                  >
+                  <Stack className="pt-5" w={"100%"} align="start" spacing={10}>
+                    <PricingUnit name="Advanced Website" />
+                    <PricingUnit name="Update Google Maps" />
+                    <PricingUnit name="Increase Google Reviews" />
+                    <PricingUnit name="Social Media Posting" />
+
                     <Divider
                       sx={{
                         width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
-                        opacity: theme.colorScheme === "dark" && 0.7,
-                      }}
-                    />
-                    <Text fz={"sm"} fw={600}>
-                      500 GB Storage
-                    </Text>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
-                        opacity: theme.colorScheme === "dark" && 0.7,
-                      }}
-                    />
-                    <Text fz={"sm"} fw={600}>
-                      2 Users Allowed
-                    </Text>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
-                        opacity: theme.colorScheme === "dark" && 0.7,
-                      }}
-                    />
-                    <Text fz={"sm"} fw={600}>
-                      Send up to 3 GB
-                    </Text>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
+                        borderColor: "dimgray",
                         opacity: theme.colorScheme === "dark" && 0.7,
                       }}
                     />
                   </Stack>
-                  <Button
-                    variant="gradient"
-                    gradient={{
-                      from: "hsl(236, 72%, 79%)",
-                      to: "hsl(237, 63%, 64%)",
-                    }}
-                    w="100%"
-                  >
-                    LEARN MORE
-                  </Button>
                 </Stack>
-              </Box> */}
+              </Box>
               {/* ESSENTIALS SUITE */}
               <Box
-               className="pt-12"
-               sx={{
-                 boxShadow: "0px 30px 50px -7px rgba(0,0,0,0.1)",
-                 height: "30rem",
-                 width: "19rem",
-                 paddingInline: "1.5rem",
-                 backgroundColor:
-                   theme.colorScheme === "dark"
-                     ? theme.colors.dark[5]
-                     : "white",
-                 borderRadius: "0.7rem 0 0 0.7rem",
-                 display: "flex",
-                 alignItems: "start",
-                 justifyContent: "center",
-
-                 "@media (max-width: 755px)": {
-                   width: "19rem",
-                   borderRadius: "0.7rem",
-                 },
-                 "@media (min-width: 756px) and (max-width: 820px)": {
-                   width: "15rem",
-                   borderRadius: "0.7rem 0 0 0.7rem",
-                 },
-               }}
+                className="bg-white pt-12 text-black-100 dark:border dark:border-white/[0.2] dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
+                sx={{
+                  boxShadow: "0px 30px 50px -7px rgba(0,0,0,0.1)",
+                  height: "52rem",
+                  width: "20rem",
+                  paddingInline: "1.5rem",
+                  borderRadius: "0 0 0 0",
+                  display: "flex",
+                  alignItems: "start",
+                  justifyContent: "center",
+                  "@media (max-width: 755px)": {
+                    width: "19rem",
+                    borderRadius: "0",
+                  },
+                  "@media (min-width: 756px) and (max-width: 820px)": {
+                    width: "15rem",
+                    borderRadius: "0 0 0 0",
+                  },
+                }}
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
-                  <Text
-                    sx={{
-                      fontWeight: 700,
-                      color:
-                        theme.colorScheme === "dark"
-                          ? theme.colors.dark[1]
-                          : "hsl(233, 13%, 49%)",
-                    }}
-                    fz={"md"}
-                  >
-                    ESSENTIALS SUITE
-                  </Text>
+                  <div className="flex flex-1 gap-2">
+                    <Image
+                      src="/growth-black.svg"
+                      alt=""
+                      height={20}
+                      width={20}
+                    />
+                    <Text
+                      sx={{
+                        fontWeight: 700,
+                      }}
+                      fz={"md"}
+                    >
+                      ESSENTIALS SUITE
+                    </Text>
+                  </div>
                   <Title
                     order={2}
                     sx={{
-                      color:
-                        theme.colorScheme === "dark"
-                          ? "white"
-                          : "hsl(232, 13%, 33%)",
                       fontSize: 50,
                       display: "flex",
                       alignItems: "center",
@@ -240,120 +192,40 @@ const PricingContainerLight
                     <Text fz={"2rem"}>/mo</Text>
                     {/* <Text fz={"2rem"}>{monthly ? "/yr" : "/mo"}</Text> */}
                   </Title>
-                  <Stack
-                    w={"100%"}
-                    align="start"
-                    spacing={10}
-                    sx={{
-                      color:
-                        theme.colorScheme === "light" && "hsl(233, 13%, 49%)",
-                    }}
-                  >
-                    <Divider
+                  <Stack className="pt-5" w={"100%"} align="start" spacing={10}>
+                    <PricingUnit name="Advanced Website" />
+                    <PricingUnit name="Update Google Maps" />
+                    <PricingUnit name="Increase Google Reviews" />
+                    {/* <Divider
                       sx={{
                         width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
+                        borderColor: "dimgray",
                         opacity: theme.colorScheme === "dark" && 0.7,
                       }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-indigo-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Advanced Website
-                      </Text>
-                    </div>
+                    /> */}
+                    {/* <br /> */}
+                    <PricingUnit name="Social Media Posting" />
+                    <PricingUnit name="Facebook + Instagram Ads" />
+                    <PricingUnit name="5 Business Emails" />
+                    <PricingUnit name="12 Guaranteed Appts/mo" />
+                    <PricingUnit name="Priority Support" />
                     <Divider
                       sx={{
                         width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
-                        opacity: theme.colorScheme === "dark" && 0.7,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-indigo-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Facebook + Instagram Ads
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
-                        opacity: theme.colorScheme === "dark" && 0.7,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-indigo-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        12 Guaranteed Appts/mo
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
+                        borderColor: "dimgray",
                         opacity: theme.colorScheme === "dark" && 0.7,
                       }}
                     />
                   </Stack>
-                  {/* <Button
-                    variant="gradient"
-                    gradient={{
-                      from: "hsl(236, 72%, 79%)",
-                      to: "hsl(237, 63%, 64%)",
-                    }}
-                    w="100%"
-                  >
-                    LEARN MORE
-                  </Button> */}
                 </Stack>
               </Box>
               {/* PROFESSIONAL SUITE */}
               <Box
-                className="animate-gradient pt-12"
+                className="pt-12"
                 sx={{
                   boxShadow: "0px 30px 50px -7px rgba(0,0,0,0.1)",
-                  height: "32rem",
-                  width: "20rem",
+                  height: "52rem",
+                  width: "21rem",
                   paddingInline: "1.5rem",
                   background: "transparent",
                   // background:
@@ -362,7 +234,7 @@ const PricingContainerLight
                     "linear-gradient(to right, #4338ca, #6366f1,#8b5cf6, #6366f1, #4338ca, #6366f1)",
                   backgroundSize: "500% 500%",
                   color: "white",
-                  borderRadius: "0.7rem",
+                  borderRadius: "0rem",
                   display: "flex",
                   alignItems: "start",
                   justifyContent: "center",
@@ -374,14 +246,17 @@ const PricingContainerLight
                 }}
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
-                  <Text
-                    sx={{
-                      fontWeight: 700,
-                    }}
-                    fz={"md"}
-                  >
-                    PROFESSIONAL SUITE
-                  </Text>
+                  <div className="flex flex-1 gap-1">
+                    <Image src="/star.svg" alt="" height={20} width={20} />
+                    <Text
+                      sx={{
+                        fontWeight: 700,
+                      }}
+                      fz={"md"}
+                    >
+                      PROFESSIONAL SUITE
+                    </Text>
+                  </div>
                   <Title
                     order={2}
                     sx={{
@@ -396,137 +271,25 @@ const PricingContainerLight
                     {/* AT 22% DISCOUNT */}
                     <Text fz={"2rem"}>/mo</Text>
                   </Title>
-                  <Stack w={"100%"} align="start" spacing={10}>
-                    <Divider
+                  <Stack className="pt-5" w={"100%"} align="start" spacing={10}>
+                    <PricingUnitPro name="Professional Website Development" />
+                    <PricingUnitPro name="Update Google Maps" />
+                    <PricingUnitPro name="Increase Google Reviews" />
+                    <PricingUnitPro name="Social Media Posting" />
+                    {/* <Divider
                       sx={{
                         width: "100%",
                         borderColor: theme.colorScheme === "dark" && "white",
-                        opacity: theme.colorScheme === "dark" && 0.6,
+                        opacity: theme.colorScheme === "dark" && 0.7,
                       }}
                     />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-white"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Professional Website Development
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "white",
-                        opacity: theme.colorScheme === "dark" && 0.6,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-white"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Facebook + Instagram + Google Ads
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "white",
-                        opacity: theme.colorScheme === "dark" && 0.6,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-white"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Persusasive Landing Pages
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "white",
-                        opacity: theme.colorScheme === "dark" && 0.6,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-white"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Monthly Strategy Meetings
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "white",
-                        opacity: theme.colorScheme === "dark" && 0.6,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-white"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        30 Guaranteed Appts/mo
-                      </Text>
-                    </div>
+                    <br /> */}
+                    <PricingUnitPro name="Facebook + Instagram + Google Ads" />
+                    <PricingUnitPro name="12 Business Emails" />
+                    <PricingUnitPro name="Monthly Strategy Meetings" />
+                    <PricingUnitPro name="Persusasive Landing Pages" />
+                    <PricingUnitPro name="30 Guaranteed Appts/mo" />
+                    <PricingUnitPro name="Priority Support" />
                     <Divider
                       sx={{
                         width: "100%",
@@ -553,21 +316,16 @@ const PricingContainerLight
               </Box>
               {/* MASTER SUITE */}
               <Box
-                className="pt-12"
+                className="bg-white pt-12 text-black-100 dark:border dark:border-white/[0.2] dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
                 sx={{
                   boxShadow: "0px 30px 50px -7px rgba(0,0,0,0.1)",
-                  height: "30rem",
-                  width: "19rem",
+                  height: "52rem",
+                  width: "20rem",
                   paddingInline: "1.5rem",
-                  backgroundColor:
-                    theme.colorScheme === "dark"
-                      ? theme.colors.dark[5]
-                      : "white",
                   borderRadius: "0 0.7rem 0.7rem 0",
                   display: "flex",
                   alignItems: "start",
                   justifyContent: "center",
-
                   "@media (max-width: 755px)": {
                     width: "19rem",
                     borderRadius: "0.7rem",
@@ -579,25 +337,25 @@ const PricingContainerLight
                 }}
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
-                  <Text
-                    sx={{
-                      fontWeight: 700,
-                      color:
-                        theme.colorScheme === "dark"
-                          ? theme.colors.dark[1]
-                          : "hsl(233, 13%, 49%)",
-                    }}
-                    fz={"md"}
-                  >
-                    MASTER SUITE
-                  </Text>
+                  <div className="flex flex-1 gap-1">
+                    <Image
+                      src="/crown-black.svg"
+                      alt=""
+                      height={20}
+                      width={20}
+                    />
+                    <Text
+                      sx={{
+                        fontWeight: 700,
+                      }}
+                      fz={"md"}
+                    >
+                      MASTER SUITE
+                    </Text>
+                  </div>
                   <Title
                     order={2}
                     sx={{
-                      color:
-                        theme.colorScheme === "dark"
-                          ? "white"
-                          : "hsl(232, 13%, 33%)",
                       fontSize: 50,
                       display: "flex",
                       alignItems: "center",
@@ -609,175 +367,30 @@ const PricingContainerLight
                     {/* AT 22% DISCOUNT */}
                     <Text fz={"2rem"}>/mo</Text>
                   </Title>
-                  <Stack
-                    w={"100%"}
-                    align="start"
-                    spacing={10}
-                    sx={{
-                      color:
-                        theme.colorScheme === "light" && "hsl(233, 13%, 49%)",
-                    }}
-                  >
-                    <Divider
+                  <Stack className="pt-5" w={"100%"} align="start" spacing={10}>
+                    <PricingUnit name="Professional Website Development" />
+                    <PricingUnit name="Update Google Maps" />
+                    <PricingUnit name="Increase Google Reviews" />
+                    <PricingUnit name="Social Media Posting" />
+                    {/* <Divider
                       sx={{
                         width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
+                        borderColor: "dimgray",
                         opacity: theme.colorScheme === "dark" && 0.7,
                       }}
                     />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-indigo-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Professional Website Development
-                      </Text>
-                    </div>
+                    <br /> */}
+                    <PricingUnit name="Facebook + Instagram + Google Ads" />
+                    <PricingUnit name="20 Business Emails" />
+                    <PricingUnit name="Weekly Strategy Meetings" />
+                    <PricingUnit name="Persusasive Landing Pages" />
+                    <PricingUnit name="Email Marketing" />
+                    <PricingUnit name="120 Guaranteed Appts/mo" />
+                    <PricingUnit name="VIP Support" />
                     <Divider
                       sx={{
                         width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
-                        opacity: theme.colorScheme === "dark" && 0.7,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-indigo-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Facebook + Instagram + Google Ads
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
-                        opacity: theme.colorScheme === "dark" && 0.7,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-indigo-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Email Marketing
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
-                        opacity: theme.colorScheme === "dark" && 0.7,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-indigo-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Persusasive Landing Pages
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
-                        opacity: theme.colorScheme === "dark" && 0.7,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-indigo-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        Weekly Strategy Meetings
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
-                        opacity: theme.colorScheme === "dark" && 0.7,
-                      }}
-                    />
-                    <div className="flex space-x-2">
-                      <svg
-                        className="mt-0.5 size-4 flex-shrink-0 text-indigo-600"
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                      <Text fz={"sm"} fw={600}>
-                        120 Guaranteed Appts/mo
-                      </Text>
-                    </div>
-                    <Divider
-                      sx={{
-                        width: "100%",
-                        borderColor: theme.colorScheme === "dark" && "gray",
+                        borderColor: "dimgray",
                         opacity: theme.colorScheme === "dark" && 0.7,
                       }}
                     />
@@ -798,9 +411,8 @@ const PricingContainerLight
           </Group>
         </Stack>
       </Group>
-    </>
+    </div>
   );
 };
 
-export default PricingContainerLight;
-;
+export default PricingContainerDark;

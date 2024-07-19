@@ -1,6 +1,6 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import MagicButton from "./ui/MagicButton";
-import { socialMedia } from "@/data";
+import { socialMedia } from "@/data/index2";
 import Image from "next/image";
 
 const Footer = () => {
@@ -27,7 +27,7 @@ const Footer = () => {
     },
   ];
   return (
-    <footer className="relative w-full pb-10 pt-20 lg:mt-24" id="contact">
+    <footer className="relative w-full pb-10 pt-20 lg:mt-24 font-lexendDeca" id="contact">
       {/* <div className="w-full relative left-0 -bottom-72 min-h-96">
         <img
           src="/footer-grid.svg"

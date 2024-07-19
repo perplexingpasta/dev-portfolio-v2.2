@@ -84,7 +84,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
         <CardItem
           as="p"
           translateZ="60"
-          className="mt-2 text-lg text-neutral-800 dark:text-neutral-300"
+          className="mt-2 text-lg text-neutral-800 font-lexendDeca dark:text-neutral-300"
         >
           {des}
         </CardItem>

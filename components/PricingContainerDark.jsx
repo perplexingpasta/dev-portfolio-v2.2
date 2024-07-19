@@ -13,8 +13,8 @@ import {
 } from "@mantine/core";
 import { useState } from "react";
 import Switch from "react-switch";
-import PricingPreline from "./PricingPreline";
 import { PricingUnit, PricingUnitPro } from "./ui/PricingUnit";
+import Image from "next/image";
 
 const PricingContainerDark = () => {
   const theme = useMantineTheme();
@@ -90,18 +90,21 @@ const PricingContainerDark = () => {
                 }}
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
-                  <Text
-                    sx={{
-                      fontWeight: 700,
-                      color:
-                        theme.colorScheme === "dark"
-                          ? theme.colors.dark[1]
-                          : "white",
-                    }}
-                    fz={"md"}
-                  >
-                    FOUNDATION SUITE
-                  </Text>
+                  <div className="flex flex-1 gap-1">
+                    <Image src="/plant.svg" alt="" height={20} width={20} />
+                    <Text
+                      sx={{
+                        fontWeight: 700,
+                        color:
+                          theme.colorScheme === "dark"
+                            ? theme.colors.dark[1]
+                            : "white",
+                      }}
+                      fz={"md"}
+                    >
+                      FOUNDATION SUITE
+                    </Text>
+                  </div>
                   <Title
                     order={2}
                     sx={{
@@ -165,18 +168,21 @@ const PricingContainerDark = () => {
                 }}
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
-                  <Text
-                    sx={{
-                      fontWeight: 700,
-                      color:
-                        theme.colorScheme === "dark"
-                          ? theme.colors.dark[1]
-                          : "white",
-                    }}
-                    fz={"md"}
-                  >
-                    ESSENTIALS SUITE
-                  </Text>
+                  <div className="flex flex-1 gap-2">
+                    <Image src="/growth.svg" alt="" height={20} width={20} />
+                    <Text
+                      sx={{
+                        fontWeight: 700,
+                        color:
+                          theme.colorScheme === "dark"
+                            ? theme.colors.dark[1]
+                            : "white",
+                      }}
+                      fz={"md"}
+                    >
+                      ESSENTIALS SUITE
+                    </Text>
+                  </div>
                   <Title
                     order={2}
                     sx={{
@@ -205,15 +211,15 @@ const PricingContainerDark = () => {
                     <PricingUnit name="Advanced Website" />
                     <PricingUnit name="Update Google Maps" />
                     <PricingUnit name="Increase Google Reviews" />
-                    <PricingUnit name="Social Media Posting" />
-                    <Divider
+                    {/* <Divider
                       sx={{
                         width: "100%",
                         borderColor: "dimgray",
                         opacity: theme.colorScheme === "dark" && 0.7,
                       }}
-                    />
-                    <br />
+                    /> */}
+                    {/* <br /> */}
+                    <PricingUnit name="Social Media Posting" />
                     <PricingUnit name="Facebook + Instagram Ads" />
                     <PricingUnit name="5 Business Emails" />
                     <PricingUnit name="12 Guaranteed Appts/mo" />
@@ -255,14 +261,17 @@ const PricingContainerDark = () => {
                 }}
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
-                  <Text
-                    sx={{
-                      fontWeight: 700,
-                    }}
-                    fz={"md"}
-                  >
-                    PROFESSIONAL SUITE
-                  </Text>
+                  <div className="flex flex-1 gap-1">
+                    <Image src="/star.svg" alt="" height={20} width={20} />
+                    <Text
+                      sx={{
+                        fontWeight: 700,
+                      }}
+                      fz={"md"}
+                    >
+                      PROFESSIONAL SUITE
+                    </Text>
+                  </div>
                   <Title
                     order={2}
                     sx={{
@@ -282,14 +291,14 @@ const PricingContainerDark = () => {
                     <PricingUnitPro name="Update Google Maps" />
                     <PricingUnitPro name="Increase Google Reviews" />
                     <PricingUnitPro name="Social Media Posting" />
-                    <Divider
+                    {/* <Divider
                       sx={{
                         width: "100%",
                         borderColor: theme.colorScheme === "dark" && "white",
                         opacity: theme.colorScheme === "dark" && 0.7,
                       }}
                     />
-                    <br />
+                    <br /> */}
                     <PricingUnitPro name="Facebook + Instagram + Google Ads" />
                     <PricingUnitPro name="12 Business Emails" />
                     <PricingUnitPro name="Monthly Strategy Meetings" />
@@ -343,18 +352,21 @@ const PricingContainerDark = () => {
                 }}
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
-                  <Text
-                    sx={{
-                      fontWeight: 700,
-                      color:
-                        theme.colorScheme === "dark"
-                          ? theme.colors.dark[1]
-                          : "white",
-                    }}
-                    fz={"md"}
-                  >
-                    MASTER SUITE
-                  </Text>
+                  <div className="flex flex-1 gap-1">
+                    <Image src="/crown.svg" alt="" height={20} width={20} />
+                    <Text
+                      sx={{
+                        fontWeight: 700,
+                        color:
+                          theme.colorScheme === "dark"
+                            ? theme.colors.dark[1]
+                            : "white",
+                      }}
+                      fz={"md"}
+                    >
+                      MASTER SUITE
+                    </Text>
+                  </div>
                   <Title
                     order={2}
                     sx={{
@@ -383,14 +395,14 @@ const PricingContainerDark = () => {
                     <PricingUnit name="Update Google Maps" />
                     <PricingUnit name="Increase Google Reviews" />
                     <PricingUnit name="Social Media Posting" />
-                    <Divider
+                    {/* <Divider
                       sx={{
                         width: "100%",
                         borderColor: "dimgray",
                         opacity: theme.colorScheme === "dark" && 0.7,
                       }}
                     />
-                    <br />
+                    <br /> */}
                     <PricingUnit name="Facebook + Instagram + Google Ads" />
                     <PricingUnit name="20 Business Emails" />
                     <PricingUnit name="Weekly Strategy Meetings" />

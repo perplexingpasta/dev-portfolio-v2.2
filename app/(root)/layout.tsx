@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer3";
+import Whatsapp from "@/components/Whatsapp";
 import { FloatingNav3 } from "@/components/ui/FloatingNav3";
 import { navItems } from "@/data/index2";
 import React from "react";
@@ -10,6 +11,7 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         <div className="w-full max-w-7xl">
           <FloatingNav3 navItems={navItems} />
           {children}
+          <Whatsapp />
           <Footer />
         </div>
       </div>

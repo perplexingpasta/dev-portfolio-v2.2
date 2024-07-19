@@ -284,3 +284,28 @@
   background: var(--btn-color);
   color: coral
 } */
+
+
+/* FONTS CSS */
+
+
+@font-face {
+  font-family: "Outfit";
+  src: url("/fonts/Outfit-Variable.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lexend";
+  src: url("/fonts/Lexend-Variable.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "LexendDeca";
+  src: url("/fonts/LexendDeca-Variable.ttf") format("truetype");
+  font-weight: 100 200 300 400 500 600 700 800 900;
+  font-style: normal;
+}

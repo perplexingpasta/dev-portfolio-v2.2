@@ -8,6 +8,7 @@ import MagicButton from "./ui/MagicButton";
 import { Spotlight } from "./ui/Spotlight";
 // import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { HeroHighlightDemo } from "./HeroHighlightDemo";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -54,12 +55,12 @@ const Hero = () => {
               // words="Helping Dermatologists Acquire Consistent, Predictable & Loyal Patients"
             /> */}
           </div>
-          <div className="block dark:hidden lg:mb-10">
+          <div className="dark:hidden lg:mb-10">
             <HeroHighlightDemo />
           </div>
 
           {/* HI WE ARE */}
-          <p className="my-10 text-center text-base md:mt-14 md:text-lg md:tracking-wider lg:text-2xl">
+          <p className="my-10 text-center font-lexendDeca text-base md:mt-14 md:text-lg md:tracking-wider lg:text-2xl">
             Hi! We&apos;re{" "}
             <span className="font-semibold">Céleste Consulting</span> ✨
             <br /> We help Dermatologists with Consistent, Predictable & Loyal
@@ -67,7 +68,7 @@ const Hero = () => {
           </p>
 
           {/* CTA BUTTONS */}
-          <a href="#contact">
+          <Link href="#contact">
             <div className="hidden dark:block">
               <MagicButton
                 title="BOOK A CALL NOW"
@@ -82,12 +83,12 @@ const Hero = () => {
                 position="right"
               />
             </div>
-          </a>
+          </Link>
         </div>
 
         {/* SCROLLBUTTON */}
-        <div className="xs:bottom-10 absolute top-full flex w-full items-center justify-center mt-32">
-          <a href="#about">
+        <div className="xs:bottom-10 absolute top-full mt-32 flex w-full items-center justify-center">
+          <Link href="#services">
             <div className="flex h-12 w-6 items-start justify-center rounded-3xl border-2 border-black-100 dark:border-white-100 md:h-16 md:w-9 md:border-4 md:p-2">
               <motion.div
                 animate={{
@@ -101,7 +102,7 @@ const Hero = () => {
                 className="h-[0.7rem] w-[0.7rem] rounded-full bg-black-100 dark:bg-white-100 md:h-3 md:w-3"
               />
             </div>
-          </a>
+          </Link>
         </div>
       </div>
     </div>
