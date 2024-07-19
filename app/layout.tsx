@@ -6,7 +6,7 @@ import "./globals.css";
 import { ThemeProvider } from "./provider";
 
 
-export const mont = Montserrat({
+export const montserrat = Montserrat({
   subsets: ['latin'],
   display: 'swap',
 })
@@ -38,7 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={mont.className}>
+      <body className={montserrat.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
