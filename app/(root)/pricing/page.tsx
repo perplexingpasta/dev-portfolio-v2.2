@@ -1,6 +1,9 @@
 // import PricingPreline from "./PricingPreline";
+import PricingFAQ from "@/components/PricingFAQ";
 import PricingContainerDark from "@/components/PricingContainerDark";
 import PricingContainerLight from "@/components/PricingContainerLight";
+import MagicButton from "@/components/ui/MagicButton";
+import { FaLocationArrow } from "react-icons/fa6";
 
 const Pricing = () => {
   return (
@@ -33,6 +36,30 @@ const Pricing = () => {
       {/* <div className="relative flex items-center justify-center pt-10">
         <PricingPreline />
       </div> */}
+      <div className="mt-10 flex flex-col items-center justify-center md:mt-20">
+        <a href="mailto:hello@celesteconsulting.in">
+          <MagicButton
+            title="Let's get in touch"
+            icon={<FaLocationArrow />}
+            position="right"
+          />
+        </a>
+      </div>
+
+      <div className="mt-20 md:mt-40">
+        <h1 className="heading relative block !font-extrabold dark:hidden">
+          <span className="relative inline-block rounded-lg bg-gradient-to-r from-indigo-500 to-purple px-3 py-2 text-white">
+            FAQs
+          </span>
+        </h1>
+        <h1 className="heading relative hidden !font-extrabold dark:block">
+          <span className="text-purple">FAQs</span>
+        </h1>
+
+        <div className="relative mt-10 md:mt-20">
+          <PricingFAQ />
+        </div>
+      </div>
     </div>
   );
 };

@@ -15,8 +15,6 @@ import { useState } from "react";
 import Switch from "react-switch";
 import PricingPreline from "./PricingPreline";
 import { PricingUnit, PricingUnitPro } from "./ui/PricingUnit";
-import { FaLocationArrow } from "react-icons/fa6";
-import MagicButton from "./ui/MagicButton";
 
 const PricingContainerDark = () => {
   const theme = useMantineTheme();
@@ -219,6 +217,7 @@ const PricingContainerDark = () => {
                     <PricingUnit name="Facebook + Instagram Ads" />
                     <PricingUnit name="5 Business Emails" />
                     <PricingUnit name="12 Guaranteed Appts/mo" />
+                    <PricingUnit name="Priority Support" />
                     <Divider
                       sx={{
                         width: "100%",
@@ -296,6 +295,7 @@ const PricingContainerDark = () => {
                     <PricingUnitPro name="Monthly Strategy Meetings" />
                     <PricingUnitPro name="Persusasive Landing Pages" />
                     <PricingUnitPro name="30 Guaranteed Appts/mo" />
+                    <PricingUnitPro name="Priority Support" />
                     <Divider
                       sx={{
                         width: "100%",
@@ -397,6 +397,7 @@ const PricingContainerDark = () => {
                     <PricingUnit name="Persusasive Landing Pages" />
                     <PricingUnit name="Email Marketing" />
                     <PricingUnit name="120 Guaranteed Appts/mo" />
+                    <PricingUnit name="VIP Support" />
                     <Divider
                       sx={{
                         width: "100%",
@@ -421,15 +422,6 @@ const PricingContainerDark = () => {
           </Group>
         </Stack>
       </Group>
-      <div className="mt-20">
-        <a href="mailto:hello@celesteconsulting.in">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
-      </div>
     </div>
   );
 };

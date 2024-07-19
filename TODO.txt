@@ -32,11 +32,16 @@ extended footer and included all links ✅
 added privacy policy ✅
 detailed pricing page ✅
 
-remove navbar in mobile; use hamburger instead
+added active links to navbar ✅
+added FAQs to the pricing page ✅
+add RJ in footer ✅
+remove navbar in mobile; use hamburger instead ✅
+added mode toggle for mobile devices ✅
+
+whatsapp button placement in mobile
 contact page
 about us page
 add svg beside bundle names in pricing
-add RJ at the bottom
 in pleiades show 5 steps and put CTA
 
 add meta tags in html and then use opengraph.xyz3 to check
