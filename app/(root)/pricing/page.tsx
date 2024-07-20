@@ -6,6 +6,7 @@ import MagicButton from "@/components/ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import Link from "next/link";
 import LitUpButton from "@/components/ui/LitUpButton";
+import PricingContainerNotion from "@/components/PricingContainerNotion";
 
 const Pricing = () => {
   return (
@@ -36,7 +37,7 @@ const Pricing = () => {
         <PricingContainerLight />
       </div>
       <div className="relative hidden items-center justify-center pt-10 dark:flex">
-        <PricingContainerDark />
+        <PricingContainerNotion />
       </div>
       {/* <div className="relative flex items-center justify-center pt-10">
         <PricingPreline />

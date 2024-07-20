@@ -1,4 +1,5 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react"
 import type { Metadata } from "next";
 import { Montserrat, Lexend_Deca } from "next/font/google";
 import "./globals.css";
@@ -26,9 +27,6 @@ export const metadata: Metadata = {
     shortcut: ["/apple-touch-icon.png"],
   },
 };
-// inter, mont, lex, urbanist, outfit, lexmega, lexdeca, lextera
-// mont for hero h1
-// lexdeca for p text
 
 export default function RootLayout({
   children,
@@ -45,6 +43,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <Analytics />
           <SpeedInsights />
         </ThemeProvider>
       </body>

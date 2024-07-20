@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/ScrollButton.jsx", "components/PricingContainerDark.jsx", "components/FooterDRZ.jsx", "components/ui/PricingUnit.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/ScrollButton.jsx", "components/PricingContainerDark.jsx", "components/FooterDRZ.jsx", "components/ui/PricingUnit.jsx", "components/PricingContainerNotion.jsx"],
   "exclude": ["node_modules"]
 }

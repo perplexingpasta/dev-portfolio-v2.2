@@ -46,6 +46,12 @@ removed redundant files ✅
 changed font sitewide ✅
 removed bentogrid in lightmode ✅
 
+added terms of use ✅
+connected porkbun domain to vercel hosting & edited dns records ✅
+registered website w google
+added vercel analytics ✅
+
+redo pricing section to look like notion's and add bg grey in both modes
 put logo in footer
 light mode footer
 whatsapp button placement in mobile
