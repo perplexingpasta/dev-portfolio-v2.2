@@ -51,41 +51,36 @@ connected porkbun domain to vercel hosting & edited dns records ✅
 registered website w google
 added vercel analytics ✅
 
+tidied up public folder ✅
+fixed console errors ✅
+changed all a tags to Link ✅
+added dynamic import to grid, services, whatsapp, footer, faqs, scrollbutton ✅
+changed logo ✅
+updated footer social links ✅
+put logo in footer & improved it ✅
+implemented loading state between pages ✅
+used semantic tags ✅
+rewrite all alt tags of images ✅
+add meta tags in html and then use opengraph.xyz3 to check ✅
+
 redo pricing section to look like notion's and add bg grey in both modes
-put logo in footer
+service cards
+
 light mode footer
-whatsapp button placement in mobile
 contact page
 about us page
 in pleiades show 5 steps and put CTA
 
-rewrite all alt tags of images - read below for how to
-add meta tags in html and then use opengraph.xyz3 to check
 finish up implementing mode toggle
-
 cookie accept
 implement form, calendly
 put google analytics
 do seo
 
 ----------------------------------------------------------------------------------------
-DO AT LAST
-change href link in celeste consulting <a> in footer to actual domain
-
-----------------------------------------------------------------------------------------
 OPTIMIZATION:
-use next image component after deploying
-compress images; use webp images
-specificy image height & width
-
-dynamic imports for heavy components
-use react's lazy & suspense
 use PurgeCss to remove unused CSS
-
-optimize & preload fonts
 minimize js by tree shaking
-
-implement server side rendering
 use a CDN to serve static assets
 
 ALT PROPERTY

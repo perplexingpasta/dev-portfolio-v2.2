@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const PrivacyPolicy = () => {
@@ -19,7 +20,7 @@ const PrivacyPolicy = () => {
           <span className="text-purple">Privacy Policy</span>
         </h1>
         <h2 className="relative mb-16 items-center justify-center py-4 text-center text-lg text-black-100 dark:text-white">
-          Last updated: July 19, 2024
+          Last updated: July 22, 2024
         </h2>
         <div className="relative text-xl">
           <p>
@@ -120,13 +121,13 @@ const PrivacyPolicy = () => {
               <p>
                 <strong>Website</strong> refers to Celeste Consulting,
                 accessible from{" "}
-                <a
+                <Link
                   href="https://celesteconsulting.in"
                   rel="external nofollow noopener noreferrer"
                   target="_blank"
                 >
                   celesteconsulting.in
-                </a>
+                </Link>
               </p>
             </li>
             <li>
@@ -221,13 +222,13 @@ const PrivacyPolicy = () => {
               on how You can delete Flash Cookies, please read &#x27;Where can I
               change the settings for disabling, or deleting local shared
               objects?&#x27; available at{" "}
-              <a
+              <Link
                 href="https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_"
                 rel="external nofollow noopener noreferrer"
                 target="_blank"
               >
                 https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_
-              </a>
+              </Link>
             </li>
             <li>
               <strong>Web Beacons.</strong> Certain sections of our Service and

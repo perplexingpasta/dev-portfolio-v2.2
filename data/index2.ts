@@ -1,10 +1,10 @@
 export const navItems = [
-  { name: "Home", link: "/" },
-  { name: "About Us", link: "/#about" },
-  { name: "Services", link: "/#services" },
-  { name: "Why Us", link: "/#testimonials" },
-  { name: "Pricing", link: "/pricing" },
-  { name: "Contact", link: "/contact" },
+  { name: "home", link: "/" },
+  { name: "services", link: "/#services" },
+  { name: "why us", link: "/#testimonials" },
+  { name: "pricing", link: "/pricing" },
+  { name: "contact", link: "/contact" },
+  { name: "about us", link: "/#about" },
 ];
 
 export const gridItems = [
@@ -52,25 +52,25 @@ export const services = [
     id: 1,
     title: "Professional Website Development",
     des: "All our websites are hand-coded by our experienced team of web developers. It looks so good that you won't stop talking about it to all your friends. Guaranteed.",
-    img: "/p1.svg",
+    img: "/images/p1.svg",
   },
   {
     id: 2,
     title: "Ad Management & Digital Marketing",
     des: "We help you generate consistent, predictable and scalable leads by running targeted ad campaigns for your ideal patient demographic which helps achieve a loyal patient inflow all the time.",
-    img: "/p2.svg",
+    img: "/images/p2.svg",
   },
   {
     id: 3,
     title: "Front Office Helper",
     des: "Turn your front office staff into a medical sales machine that never misses a new lead with our proprietary software Orion which is built specifically for dermatological practices like yours.",
-    img: "/p3.svg",
+    img: "/images/p3.svg",
   },
   {
     id: 4,
     title: "Google Maps & Reviews Manager",
     des: "We boost your local listing on Google Maps and improve your Google Business Page. We also help you get more 5 star reviews from your satisfied patients by database reactivation.",
-    img: "/p4.svg",
+    img: "/images/p4.svg",
   },
 ];
 
@@ -213,14 +213,26 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    width: 20,
+    height: 20,
+    alt: "facebook page link",
+    img: "/images/facebook.svg",
+    link: "https://www.facebook.com/people/Celeste-Consulting/61561819893146/",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    width: 20,
+    height: 20,
+    alt: "linkedin business page link",
+    img: "/images/link.svg",
+    link: "https://www.linkedin.com/company/celeste-consulting/",
   },
   {
     id: 3,
-    img: "/link.svg",
+    width: 20,
+    height: 20,
+    alt: "twitter page link",
+    img: "/images/twit.svg",
+    link: "https://x.com/",
   },
 ];

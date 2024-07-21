@@ -1,8 +1,11 @@
-import Footer from "@/components/Footer3";
-import Whatsapp from "@/components/Whatsapp";
 import { FloatingNav3 } from "@/components/ui/FloatingNav3";
 import { navItems } from "@/data/index2";
 import React from "react";
+
+import dynamic from "next/dynamic";
+
+const DynamicFooter = dynamic(() => import("@/components/Footer3"), { ssr: false });
+const DynamicWhatsapp = dynamic(() => import("@/components/Whatsapp"), { ssr: false });
 
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
@@ -11,8 +14,8 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         <div className="w-full max-w-7xl">
           <FloatingNav3 navItems={navItems} />
           {children}
-          <Whatsapp />
-          <Footer />
+          <DynamicWhatsapp />
+          <DynamicFooter />
         </div>
       </div>
     </>

@@ -93,7 +93,7 @@ const PricingContainerDark = () => {
                 <Stack w={"100%"} align={"center"} spacing={20}>
                   <div className="flex flex-1 gap-1">
                     <Image
-                      src="/plant-black.svg"
+                      src="/images/plant-black.svg"
                       alt=""
                       height={20}
                       width={20}
@@ -163,7 +163,7 @@ const PricingContainerDark = () => {
                 <Stack w={"100%"} align={"center"} spacing={20}>
                   <div className="flex flex-1 gap-2">
                     <Image
-                      src="/growth-black.svg"
+                      src="/images/growth-black.svg"
                       alt=""
                       height={20}
                       width={20}
@@ -247,7 +247,7 @@ const PricingContainerDark = () => {
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
                   <div className="flex flex-1 gap-1">
-                    <Image src="/star.svg" alt="" height={20} width={20} />
+                    <Image src="/images/star.svg" alt="" height={20} width={20} />
                     <Text
                       sx={{
                         fontWeight: 700,
@@ -339,7 +339,7 @@ const PricingContainerDark = () => {
                 <Stack w={"100%"} align={"center"} spacing={20}>
                   <div className="flex flex-1 gap-1">
                     <Image
-                      src="/crown-black.svg"
+                      src="/images/crown-black.svg"
                       alt=""
                       height={20}
                       width={20}

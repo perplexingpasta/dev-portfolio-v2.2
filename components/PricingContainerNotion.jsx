@@ -29,7 +29,7 @@ const PricingContainerNotion = () => {
       <Group sx={{ zIndex: 50 }}>
         <Stack spacing={40}>
           {/** header section */}
-          {/* <Flex direction="column" gap={10} align="center" justify="start">
+          <Flex direction="column" gap={10} align="center" justify="start">
             <Box
               sx={{
                 fontWeight: 700,
@@ -50,59 +50,61 @@ const PricingContainerNotion = () => {
                 uncheckedIcon={null}
                 boxShadow=""
                 activeBoxShadow=""
-                width={45}
-                height={25}
+                width={48}
+                height={27}
                 onColor={"#7F85E4"}
                 offColor={"#7F85E4"}
                 handleDiameter={18}
               />
-              <Text fz={"sm"}>Semi-Annually</Text>
+              <Text fz={"sm"}>Annually</Text>
             </Box>
-          </Flex> */}
+          </Flex>
           {/** cards section */}
           <Group>
             <Flex
             className="space-x-4"
               align={"center"}
+              justify={"space-between"}
               direction={{ base: "column", sm: "row" }}
               color={"white"}
               gap={{ base: "1.5rem", sm: 0 }}
             >
               {/* FOUNDATION SUITE */}
               <Box
-                className="pt-12 dark:border dark:border-white/[0.2] dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
+                className="pt-5 dark:border dark:border-white/[0.2] dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1]"
                 sx={{
                   boxShadow: "0px 30px 50px -7px rgba(0,0,0,0.1)",
-                  height: "52rem",
-                  width: "20rem",
+                  height: "30rem",
+                  width: "15rem",
                   paddingInline: "1.5rem",
-                  borderRadius: "0 0 0 0",
+                  borderRadius: "0.7rem 0.7rem 0.7rem 0.7rem",
                   display: "flex",
-                  background: "dimgray",
+                  background: ["#f6f5f4"],
                   alignItems: "start",
                   justifyContent: "center",
+                  
                   "@media (max-width: 755px)": {
                     width: "19rem",
-                    borderRadius: "0",
+                    borderRadius: "0.7rem",
                   },
                   "@media (min-width: 756px) and (max-width: 820px)": {
                     width: "15rem",
-                    borderRadius: "0 0 0 0",
+                    borderRadius: "0.7rem 0.7rem 0.7rem 0.7rem",
                   },
                 }}
               >
-                <Stack w={"100%"} align={"center"} spacing={20}>
+                <Stack w={"100%"} align={"center"} spacing={5}>
                   <div className="flex flex-1 gap-1">
-                    <Image src="/plant.svg" alt="" height={20} width={20} />
+                    <Image src="/images/plant-black.svg" alt="" height={15} width={15} />
                     <Text
                       sx={{
                         fontWeight: 700,
                         color:
                           theme.colorScheme === "dark"
                             ? theme.colors.dark[1]
-                            : "white",
+                            : "black",
                       }}
-                      fz={"md"}
+                      fz={"sm"}
                     >
                       FOUNDATION SUITE
                     </Text>
@@ -110,7 +112,7 @@ const PricingContainerNotion = () => {
                   <Title
                     order={2}
                     sx={{
-                      color: theme.colorScheme === "dark" ? "white" : "white",
+                      color: theme.colorScheme === "dark" ? "black" : "black",
                       fontSize: 50,
                       display: "flex",
                       alignItems: "center",
@@ -124,12 +126,12 @@ const PricingContainerNotion = () => {
                     {/* <Text fz={"2rem"}>{monthly ? "/yr" : "/mo"}</Text> */}
                   </Title>
                   <Stack
-                    className="pt-5"
+                    className="pt-1"
                     w={"100%"}
                     align="start"
                     spacing={10}
                     sx={{
-                      color: theme.colorScheme === "light" && "white",
+                      color: theme.colorScheme === "light" && "black",
                     }}
                   >
                     <PricingUnit name="Advanced Website" />
@@ -171,7 +173,7 @@ const PricingContainerNotion = () => {
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
                   <div className="flex flex-1 gap-2">
-                    <Image src="/growth.svg" alt="" height={20} width={20} />
+                    <Image src="/images/growth.svg" alt="" height={20} width={20} />
                     <Text
                       sx={{
                         fontWeight: 700,
@@ -264,7 +266,7 @@ const PricingContainerNotion = () => {
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
                   <div className="flex flex-1 gap-1">
-                    <Image src="/star.svg" alt="" height={20} width={20} />
+                    <Image src="/images/star.svg" alt="" height={20} width={20} />
                     <Text
                       sx={{
                         fontWeight: 700,
@@ -355,7 +357,7 @@ const PricingContainerNotion = () => {
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
                   <div className="flex flex-1 gap-1">
-                    <Image src="/crown.svg" alt="" height={20} width={20} />
+                    <Image src="/images/crown.svg" alt="" height={20} width={20} />
                     <Text
                       sx={{
                         fontWeight: 700,
