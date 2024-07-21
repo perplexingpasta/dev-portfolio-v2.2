@@ -63,9 +63,11 @@ used semantic tags ✅
 rewrite all alt tags of images ✅
 add meta tags in html and then use opengraph.xyz3 to check ✅
 
+changed png images to webp ✅
+removed older svg from service cards ✅
+
 redo pricing section to look like notion's and add bg grey in both modes
 service cards
-
 light mode footer
 contact page
 about us page
@@ -82,6 +84,3 @@ OPTIMIZATION:
 use PurgeCss to remove unused CSS
 minimize js by tree shaking
 use a CDN to serve static assets
-
-ALT PROPERTY
-The alt property is used to describe the image for screen readers and search engines. It is also the fallback text if images have been disabled or an error occurs while loading the image. It should contain text that could replace the image without changing the meaning of the page. It is not meant to supplement the image and should not repeat information that is already provided in the captions above or below the image. If the image is purely decorative or not intended for the user, the alt property should be an empty string (alt="").

@@ -39,7 +39,7 @@ const Footer = () => {
         <div>
           <Link href="/">
             <Image
-              src="/images/footer-logo.png"
+              src="/images/footer-logo.webp"
               width={450}
               height={112.5}
               alt="Logo of celeste consulting"
