@@ -40,7 +40,10 @@ const Pricing = () => {
         <PricingPreline />
       </div> */}
         <section className="mt-10 flex flex-col items-center justify-center md:mt-20">
-          <Link href="mailto:hello@celesteconsulting.in">
+          <Link
+            href="https://tidycal.com/1dpydk1/discovery-call"
+            target="_blank"
+          >
             <div className="hidden dark:block">
               <MagicButton
                 title="Let's get in touch"

@@ -66,6 +66,9 @@ add meta tags in html and then use opengraph.xyz3 to check ✅
 changed png images to webp ✅
 removed older svg from service cards ✅
 
+added tidycal booking links in cta ✅
+put decent images in service card ✅
+
 redo pricing section to look like notion's and add bg grey in both modes
 service cards
 light mode footer

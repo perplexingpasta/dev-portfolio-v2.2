@@ -117,9 +117,9 @@ const PricingContainerDark = () => {
                     }}
                   >
                     <Text fz={"2rem"}>₹</Text>
-                    {monthly ? "16,320" : "2,740"}
+                    {monthly ? "16,320" : "5,480"}
                     {/* AT 22% DISCOUNT */}
-                    <Text fz={"2rem"}>/mo</Text>
+                    {/* <Text fz={"2rem"}>/mo</Text> */}
                     {/* <Text fz={"2rem"}>{monthly ? "/yr" : "/mo"}</Text> */}
                   </Title>
                   <Stack className="pt-5" w={"100%"} align="start" spacing={10}>
@@ -247,7 +247,12 @@ const PricingContainerDark = () => {
               >
                 <Stack w={"100%"} align={"center"} spacing={20}>
                   <div className="flex flex-1 gap-1">
-                    <Image src="/images/star.svg" alt="" height={20} width={20} />
+                    <Image
+                      src="/images/star.svg"
+                      alt=""
+                      height={20}
+                      width={20}
+                    />
                     <Text
                       sx={{
                         fontWeight: 700,

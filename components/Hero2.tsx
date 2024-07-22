@@ -70,7 +70,7 @@ const Hero = () => {
           </p>
 
           {/* CTA BUTTONS */}
-          <Link href="#contact">
+          <Link href="https://tidycal.com/1dpydk1/discovery-call" target="_blank">
             <div className="hidden dark:block">
               <MagicButton
                 title="BOOK A CALL NOW"
