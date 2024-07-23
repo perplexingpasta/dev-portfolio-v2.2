@@ -17,7 +17,7 @@ export function SparklesPreview() {
         />
       </div>
       <h1 className="md:text-6xl text-3xl font-bold text-center text-white relative z-20">
-        hiii &lt;3
+        hello!
       </h1>
     </div>
   );

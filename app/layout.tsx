@@ -17,7 +17,7 @@ const lexenddeca = Lexend_Deca({
 
 export const metadata: Metadata = {
   title:
-    "Celeste Consulting | Helping Dermatologists with Consistent, Predictable & Loyal Patient Acquisition",
+    "Céleste Consulting | Helping Dermatologists with Consistent, Predictable & Loyal Patient Acquisition",
   description:
     "We help Dermatologists with consistent, predictable & loyal patient acquisition. We get dermatologists more patients and help them grow their practice online by running paid ads on facebook and google and professional website development using nextjs. We also help set up their google business profile and increase google reviews on google maps of their clinic.",
   other: {

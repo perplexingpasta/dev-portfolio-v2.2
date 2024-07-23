@@ -17,11 +17,12 @@ const PricingFAQ = () => {
         be with growing your practice and getting in more patients as a result.
         If you&apos;re unsure of our services or whether you&apos;ve got
         committment issues, we suggest you to try our{" "}
-        <span className="dark:text-purple font-bold">Foundation Suite</span>. It&apos;s priced
-        adeptly and you&apos;ll love it,guaranteed. But if you have the guts or
-        are determined enough to succeed, we highly recommend you to go for the{" "}
-        <span className="dark:text-purple font-bold">Professional Suite</span>. It&apos;s the
-        best fr.
+        <span className="font-bold dark:text-purple">Foundation Suite</span>.
+        It&apos;s priced adeptly and you&apos;ll love it,guaranteed. But if you
+        have the guts or are determined enough to succeed, we highly recommend
+        you to go for the{" "}
+        <span className="font-bold dark:text-purple">Professional Suite</span>.
+        It&apos;s the best fr.
       </AccordionItem>
       <AccordionItem
         key="2"
@@ -29,22 +30,22 @@ const PricingFAQ = () => {
         title="I don't understand the payment model of the Foundation Suite"
       >
         We don&apos;t understand it either lol. In all seriousness, you only
-        have to pay ₹2740 once and we&apos;ll work in that for a year. It&apos;s
-        not a monthly payment. You only pay once and that&apos;s ₹2740.
-        It&apos;s dirt cheap ngl.
+        have to pay ₹5080 once and we&apos;ll work in that for a year. It&apos;s
+        not a monthly payment. You only pay once and that&apos;s ₹5080.
       </AccordionItem>
       <AccordionItem
         key="3"
         aria-label="What are business emails?"
         title="What are business emails?"
       >
-        Business emails are very essential for your profession. They&apos;re made
-        from your domain so if you get dradamsmith.com as your domain for your
-        website, you can have help@dradamsmith.com or support@dradamsmith.com as
-        your emails. In our case we have hello@celesteconsulting.in. You don&apos;t
-        need to make a new account or anything, we&apos;ll simply forward all
-        incoming emails to your main email which can be your gmail account. So
-        you get to receive all the emails in one single place.
+        Business emails are very essential for your profession. They&apos;re
+        made from your domain so if you get dradamsmith.com as your domain for
+        your website, you can have help@dradamsmith.com or
+        support@dradamsmith.com as your emails. In our case we have
+        hello@celesteconsulting.in. You don&apos;t need to make a new account or
+        anything, we&apos;ll simply forward all incoming emails to your main
+        email which can be your gmail account. So you get to receive all the
+        emails in one single place.
       </AccordionItem>
       <AccordionItem
         key="4"
@@ -66,20 +67,25 @@ const PricingFAQ = () => {
         aria-label="What features will I get in the website?"
         title="What features will I get in the website?"
       >
-        All our websites will have the following features. Of course, the professional tiers will have more advanced features but these are the common ones found across all.
+        All our websites will have the following features. Of course, the
+        professional tiers will have more advanced features but these are the
+        common ones found across all.
         <ul>
-            <li>+ Domain</li>
-            <li>+ Hosting</li>
-            <li>+ Analytics</li>
-            <li>+ SEO Setup</li>
-            <li>+ Image Gallery</li>
-            <li>+ Whatsapp Integration</li>
-            <li>+ Google Maps of your location</li>
-            <li>+ Google Reviews of your practice</li>
-            <li>+ Copywriting & Content Creation</li>
-            <li>+ Fully mobile, tablet, iphone, ipad, laptop, samsung fridge responsive</li>
-            <li>+ Follows the best Accessibility Practices</li>
-            <li>+ Regular Website Testing & Maintenance</li>
+          <li>+ Domain</li>
+          <li>+ Hosting</li>
+          <li>+ Analytics</li>
+          <li>+ SEO Setup</li>
+          <li>+ Image Gallery</li>
+          <li>+ Whatsapp Integration</li>
+          <li>+ Google Maps of your location</li>
+          <li>+ Google Reviews of your practice</li>
+          <li>+ Copywriting & Content Creation</li>
+          <li>
+            + Fully mobile, tablet, iphone, ipad, laptop, samsung fridge
+            responsive
+          </li>
+          <li>+ Follows the best Accessibility Practices</li>
+          <li>+ Regular Website Testing & Maintenance</li>
         </ul>
       </AccordionItem>
       <AccordionItem
@@ -106,14 +112,15 @@ const PricingFAQ = () => {
       >
         In our professional tiers, we provide strategy meetings, the frequency
         of which is monthly for the{" "}
-        <span className="dark:text-purple font-bold">Professional Suite</span> and weekly fo
-        the <span className="dark:text-purple font-bold">Master Suite</span>. Here you get to
-        interact with our founders who also happen to be the web development
-        manager and the ads manager. We discuss your goals, current trajectory,
-        extrapolated trajectory and business concerns with them so that you can
-        have the peace of mind that everything is going well and according to
-        plan. We also talk about which ads are performing well and where we
-        should focus our efforts for best optimization and efficiency.
+        <span className="font-bold dark:text-purple">Professional Suite</span>{" "}
+        and weekly fo the{" "}
+        <span className="font-bold dark:text-purple">Master Suite</span>. Here
+        you get to interact with our founders who also happen to be the web
+        development manager and the ads manager. We discuss your goals, current
+        trajectory, extrapolated trajectory and business concerns with them so
+        that you can have the peace of mind that everything is going well and
+        according to plan. We also talk about which ads are performing well and
+        where we should focus our efforts for best optimization and efficiency.
       </AccordionItem>
     </Accordion>
   );

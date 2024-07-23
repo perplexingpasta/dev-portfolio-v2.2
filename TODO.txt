@@ -69,6 +69,11 @@ removed older svg from service cards ✅
 added tidycal booking links in cta ✅
 put decent images in service card ✅
 
+fixed foundation pricing ✅
+changed sparkle card text to hello! ✅
+added temp pricing in foundation ✅
+removed tidycal; added calendly in light mode ✅
+
 redo pricing section to look like notion's and add bg grey in both modes
 service cards
 light mode footer

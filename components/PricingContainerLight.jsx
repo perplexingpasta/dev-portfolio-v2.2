@@ -117,7 +117,8 @@ const PricingContainerDark = () => {
                     }}
                   >
                     <Text fz={"2rem"}>₹</Text>
-                    {monthly ? "16,320" : "5,480"}
+                    {monthly ? "16,320" : "2,540"}
+                    {/* {monthly ? "16,320" : "5,080"} */}
                     {/* AT 22% DISCOUNT */}
                     {/* <Text fz={"2rem"}>/mo</Text> */}
                     {/* <Text fz={"2rem"}>{monthly ? "/yr" : "/mo"}</Text> */}
