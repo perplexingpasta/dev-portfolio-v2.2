@@ -20,7 +20,7 @@ const PrivacyPolicy = () => {
           <span className="text-purple">Privacy Policy</span>
         </h1>
         <h2 className="relative mb-16 items-center justify-center py-4 text-center text-lg text-black-100 dark:text-white">
-          Last updated: July 22, 2024
+          Last updated: July 27, 2024
         </h2>
         <div className="relative text-xl">
           <p>

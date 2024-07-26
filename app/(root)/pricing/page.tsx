@@ -41,7 +41,7 @@ const Pricing = () => {
       </div> */}
         <section className="mt-10 flex flex-col items-center justify-center md:mt-20">
           <Link
-            href="https://tidycal.com/1dpydk1/discovery-call"
+            href="https://calendly.com/celeste-consulting/strategy-session-w-celeste-consulting"
             target="_blank"
           >
             <div className="hidden dark:block">

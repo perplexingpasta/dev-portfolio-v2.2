@@ -56,7 +56,7 @@ export const services = [
   },
   {
     id: 2,
-    title: "Ad Management & Digital Marketing",
+    title: "Ad Management & Medical Marketing",
     des: "We help you generate consistent, predictable and scalable leads by running targeted ad campaigns for your ideal patient demographic which helps achieve a loyal patient inflow all the time.",
     img: "/images/graphicad.jpg",
   },

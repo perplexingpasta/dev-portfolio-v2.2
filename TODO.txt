@@ -70,9 +70,10 @@ added tidycal booking links in cta ✅
 put decent images in service card ✅
 
 fixed foundation pricing ✅
-changed sparkle card text to hello! ✅
 added temp pricing in foundation ✅
-removed tidycal; added calendly in light mode ✅
+removed tidycal; added calendly cta ✅
+
+changed digital marketing to medical marketing in hero ✅
 
 redo pricing section to look like notion's and add bg grey in both modes
 service cards
@@ -83,7 +84,7 @@ in pleiades show 5 steps and put CTA
 
 finish up implementing mode toggle
 cookie accept
-implement form, calendly
+implement form
 put google analytics
 do seo
 

@@ -10,7 +10,9 @@ import { HeroHighlightDemo } from "./HeroHighlightDemo";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 
-const DynamicScroll = dynamic(() => import("./ui/ScrollButton"), { ssr: false });
+const DynamicScroll = dynamic(() => import("./ui/ScrollButton"), {
+  ssr: false,
+});
 
 const Hero = () => {
   return (
@@ -46,14 +48,14 @@ const Hero = () => {
           {/* HERO BIG TEXT */}
           <div className="mx-auto hidden max-w-4xl px-4 dark:block lg:mb-10">
             <h1 className="text-center text-4xl font-extrabold uppercase tracking-wide text-white md:text-5xl md:!leading-tight lg:text-6xl lg:!leading-snug">
-              Digital Marketing to Grow your{" "}
+              Medical Marketing to Grow your{" "}
               <span className="gradient-text animate-gradient font-black text-transparent">
                 Dermatology Practice
               </span>
             </h1>
             {/* <TextGenerateEffect
               className="text-center text-[40px] md:text-5xl lg:text-6xl"
-              words="Digital Marketing to Grow your Dermatology Practice"
+              words="Medical Marketing to Grow your Dermatology Practice"
               // words="Helping Dermatologists Acquire Consistent, Predictable & Loyal Patients"
             /> */}
           </div>
@@ -70,7 +72,10 @@ const Hero = () => {
           </p>
 
           {/* CTA BUTTONS */}
-          <Link href="https://tidycal.com/1dpydk1/discovery-call" target="_blank">
+          <Link
+            href="https://calendly.com/celeste-consulting/strategy-session-w-celeste-consulting"
+            target="_blank"
+          >
             <div className="hidden dark:block">
               <MagicButton
                 title="BOOK A CALL NOW"

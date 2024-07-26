@@ -16,8 +16,8 @@ export function SparklesPreview() {
           particleColor="#FFFFFF"
         />
       </div>
-      <h1 className="md:text-6xl text-3xl font-bold text-center text-white relative z-20">
-        hello!
+      <h1 className="md:text-5xl text-3xl font-bold text-center text-white relative z-20">
+        hiiiii :D
       </h1>
     </div>
   );

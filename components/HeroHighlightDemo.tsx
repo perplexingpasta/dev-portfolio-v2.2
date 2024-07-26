@@ -20,7 +20,7 @@ export function HeroHighlightDemo() {
         }}
         className="mx-auto max-w-4xl px-4 text-center text-2xl text-[40px] font-black uppercase leading-relaxed tracking-wide text-black-100 dark:text-white md:text-5xl lg:text-6xl lg:leading-snug"
       >
-        Digital Marketing to Grow Your {" "}
+        Medical Marketing to Grow Your {" "}
         <Highlight className="text-black-100 dark:text-white">
           Dermatology Practice
         </Highlight>
