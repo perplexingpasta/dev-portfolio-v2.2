@@ -74,6 +74,8 @@ added temp pricing in foundation ✅
 removed tidycal; added calendly cta ✅
 
 changed digital marketing to medical marketing in hero ✅
+integrated posthog analytics ✅
+integrated partytown ✅
 
 redo pricing section to look like notion's and add bg grey in both modes
 service cards
@@ -85,7 +87,6 @@ in pleiades show 5 steps and put CTA
 finish up implementing mode toggle
 cookie accept
 implement form
-put google analytics
 do seo
 
 ----------------------------------------------------------------------------------------
