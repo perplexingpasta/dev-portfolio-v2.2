@@ -30,7 +30,7 @@ const PageNotFound = () => {
             we&apos;ll look into it.
           </p>
           <div className="mb-20 mt-10 flex flex-col items-center justify-evenly md:mt-10 md:flex-row">
-            <div className="btns btn mt-6 rounded-full bg-slate-200 text-black-100 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-purpledark hover:text-white md:my-6">
+            <div className="btns btn mt-6 rounded-full bg-slate-200 text-black-100 transition duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 hover:bg-red-300 hover:text-white md:my-6">
               <Link href="/">return home</Link>
               <HomeIcon className="-ml-5 mr-4 mt-4 md:mr-7 lg:mr-7" />
             </div>

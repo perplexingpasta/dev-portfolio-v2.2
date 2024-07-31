@@ -77,11 +77,19 @@ changed digital marketing to medical marketing in hero ✅
 integrated posthog analytics ✅
 integrated partytown ✅
 
-redo pricing section to look like notion's and add bg grey in both modes
-service cards
-light mode footer
-contact page
-about us page
+adjusted pricing faq answer color ✅
+light mode footer ✅
+improved hero ✅
+minor UI changes ✅
+put privacy policy and terms into legal ✅
+removed why us from navbar ✅
+fixed service card in mobile view ✅
+added subscribe section in home ✅
+default mode is light ✅
+grid&dotbg abstracted ✅
+
+react hot toast in subscribe
+receive the emails in subscribe
 in pleiades show 5 steps and put CTA
 
 finish up implementing mode toggle

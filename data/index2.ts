@@ -1,10 +1,10 @@
 export const navItems = [
   { name: "home", link: "/" },
   { name: "services", link: "/#services" },
-  { name: "why us", link: "/#testimonials" },
+  // { name: "why us", link: "/#testimonials" },
   { name: "pricing", link: "/pricing" },
   { name: "contact", link: "/contact" },
-  { name: "about us", link: "/#about" },
+  { name: "about us", link: "/about" },
 ];
 
 export const gridItems = [
@@ -37,7 +37,7 @@ export const gridItems = [
   {
     // COPY EMAIL ADDRESS
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Want to work together?",
     description: "",
     className: "lg:col-span-2 lg:row-span-1 md:col-span-3 md:row-span-4 md:max-h-[20vh]",
     imgClassName: "",
@@ -51,25 +51,25 @@ export const services = [
   {
     id: 1,
     title: "Professional Website Development",
-    des: "All our websites are hand-coded by our experienced team of web developers. It looks so good that you won't stop talking about it to all your friends. Guaranteed.",
+    des: "All our websites are hand-coded by our experienced team of web developers. Looks so good that you won't stop talking about it. Guaranteed.",
     img: "/images/graphicweb.jpg",
   },
   {
     id: 2,
     title: "Ad Management & Medical Marketing",
-    des: "We help you generate consistent, predictable and scalable leads by running targeted ad campaigns for your ideal patient demographic which helps achieve a loyal patient inflow all the time.",
+    des: "We run targeted ad campaigns for your ideal patient demographic which helps achieve a loyal patient inflow all the time.",
     img: "/images/graphicad.jpg",
   },
   {
     id: 3,
     title: "Front Office Helper",
-    des: "Turn your front office staff into a medical sales machine that never misses a new lead with our proprietary software Orion which is built specifically for dermatological practices like yours.",
+    des: "Turn your front office staff into a medical sales machine that never misses a new lead with our software Orion specifically built for dermatological practices.",
     img: "/images/graphicfront.jpg",
   },
   {
     id: 4,
     title: "Google Maps & Reviews Manager",
-    des: "We boost your local listing on Google Maps and improve your Google Business Page. We also help you get more 5 star reviews from your satisfied patients by database reactivation.",
+    des: "Boost your local listing on Google Maps and get more 5 star reviews from your satisfied patients by database reactivation.",
     img: "/images/graphicmap.jpg",
   },
 ];
@@ -233,6 +233,6 @@ export const socialMedia = [
     height: 20,
     alt: "twitter page link",
     img: "/images/twit.svg",
-    link: "https://x.com/",
+    link: "https://x.com/rishabhj911/",
   },
 ];

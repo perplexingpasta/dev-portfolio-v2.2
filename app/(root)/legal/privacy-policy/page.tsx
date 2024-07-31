@@ -4,25 +4,27 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <>
-      <section id="privacypolicy" className="pt-40">
-        {/* GRID/DOT BACKGROUND */}
-        <div className="absolute left-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.1]">
-          {/* Radial gradient for the container to give a faded look */}
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
-        </div>
+      <div id="privacypolicy" className="pt-40 font-lexendDeca font-light">
+        <header>
+          {/* GRID/DOT BACKGROUND */}
+          {/* <div className="absolute left-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.1]">
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
+          </div> */}
 
-        <h1 className="heading relative block !font-extrabold uppercase dark:hidden">
-          <span className="relative inline-block rounded-lg bg-gradient-to-r from-indigo-500 to-purple px-3 py-2 text-white">
-            Privacy Policy
-          </span>
-        </h1>
-        <h1 className="heading relative hidden !font-extrabold uppercase dark:block">
-          <span className="text-purple">Privacy Policy</span>
-        </h1>
-        <h2 className="relative mb-16 items-center justify-center py-4 text-center text-lg text-black-100 dark:text-white">
-          Last updated: July 27, 2024
-        </h2>
-        <div className="relative text-xl">
+          <h1 className="heading relative block !font-extrabold uppercase dark:hidden">
+            <span className="relative inline-block rounded-lg bg-gradient-to-r from-indigo-500 to-purple px-3 py-2 text-white">
+              Privacy Policy
+            </span>
+          </h1>
+          <h1 className="heading relative hidden !font-extrabold uppercase dark:block">
+            <span className="text-purple">Privacy Policy</span>
+          </h1>
+          <p className="relative mb-16 items-center justify-center py-4 text-center text-lg text-black-100 dark:text-white">
+            Last updated: August 2024
+          </p>
+        </header>
+
+        <main className="relative text-xl">
           <p>
             This Privacy Policy describes Our policies and procedures on the
             collection, use and disclosure of Your information when You use the
@@ -33,9 +35,9 @@ const PrivacyPolicy = () => {
           </p>
           <br />
           <br />
-          <h2 className="subHeadPvcH2 text-3xl">
+          <h1 className="subHeadPvcH2 text-3xl">
             Interpretation and Definitions
-          </h2>
+          </h1>
           <br />
           <h3 className="subHeadPvc text-2xl">Interpretation</h3>
           <p>
@@ -45,7 +47,7 @@ const PrivacyPolicy = () => {
             singular or in plural.
           </p>
           <br />
-          <h3>Definitions</h3>
+          <h3 className="subHeadPvc text-2xl">Definitions</h3>
           <p>For the purposes of this Privacy Policy:</p>
           <ul>
             <li>
@@ -141,9 +143,9 @@ const PrivacyPolicy = () => {
           </ul>
           <br />
           <br />
-          <h2 className="subHeadPvcH2 text-3xl">
+          <h1 className="subHeadPvcH2 text-3xl">
             Collecting and Using Your Personal Data
-          </h2>
+          </h1>
           <br />
           <h3 className="subHeadPvc text-2xl">Types of Data Collected</h3>
           <br />
@@ -201,9 +203,10 @@ const PrivacyPolicy = () => {
             activity on Our Service and store certain information. Tracking
             technologies used are beacons, tags, and scripts to collect and
             track information and to improve and analyze Our Service. The
-            technologies We use may include:
+            technologies we use may include:
           </p>
           <ul>
+            <br />
             <li>
               <strong>Cookies or Browser Cookies.</strong> A cookie is a small
               file placed on Your Device. You can instruct Your browser to
@@ -213,6 +216,7 @@ const PrivacyPolicy = () => {
               setting so that it will refuse Cookies, our Service may use
               Cookies.
             </li>
+            <br />
             <li>
               <strong>Flash Cookies.</strong> Certain features of our Service
               may use local stored objects (or Flash Cookies) to collect and
@@ -230,6 +234,7 @@ const PrivacyPolicy = () => {
                 https://helpx.adobe.com/flash-player/kb/disable-local-shared-objects-flash.html#main_Where_can_I_change_the_settings_for_disabling__or_deleting_local_shared_objects_
               </Link>
             </li>
+            <br />
             <li>
               <strong>Web Beacons.</strong> Certain sections of our Service and
               our emails may contain small electronic files known as web beacons
@@ -251,6 +256,7 @@ const PrivacyPolicy = () => {
             below:
           </p>
           <ul>
+            <br />
             <li>
               <p>
                 <strong>Necessary / Essential Cookies</strong>
@@ -266,6 +272,7 @@ const PrivacyPolicy = () => {
                 only use these Cookies to provide You with those services.
               </p>
             </li>
+            <br />
             <li>
               <p>
                 <strong>Cookies Policy / Notice Acceptance Cookies</strong>
@@ -277,6 +284,7 @@ const PrivacyPolicy = () => {
                 of cookies on the Website.
               </p>
             </li>
+            <br />
             <li>
               <p>
                 <strong>Functionality Cookies</strong>
@@ -456,9 +464,9 @@ const PrivacyPolicy = () => {
           </p>
           <br />
           <br />
-          <h2 className="subHeadPvcH2 text-3xl">
+          <h1 className="subHeadPvcH2 text-3xl">
             Disclosure of Your Personal Data
-          </h2>
+          </h1>
           <br />
           <h3 className="subHeadPvc text-2xl">Business Transactions</h3>
           <p>
@@ -559,8 +567,8 @@ const PrivacyPolicy = () => {
             <li>+ By email: hello@celesteconsulting.in</li>
             <li>+ By email: support@celesteconsulting.in</li>
           </ul>
-        </div>
-      </section>
+        </main>
+      </div>
     </>
   );
 };

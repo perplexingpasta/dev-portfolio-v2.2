@@ -185,7 +185,7 @@ export const FloatingNav3 = ({
                   key={`link=${idx}`}
                   href={navItem.link}
                   className={cn(
-                    `relative flex items-center font-semibold text-black-100 hover:text-purpledark dark:font-normal dark:text-neutral-50 dark:hover:text-purple md:space-x-1 ${isActive && navItem.link !== "/" ? "border-b-2 border-black-100 !font-bold dark:border-purpledark dark:!text-purple" : ""}`,
+                    `relative flex items-center font-semibold text-black-100 hover:text-violet-500 dark:font-normal dark:text-neutral-50 dark:hover:text-purple md:space-x-1 ${isActive && navItem.link !== "/" ? "border-b-2 border-black-100 !font-bold dark:border-purpledark dark:!text-purple" : ""}`,
                   )}
                 >
                   <span className="block sm:hidden">{navItem.icon}</span>

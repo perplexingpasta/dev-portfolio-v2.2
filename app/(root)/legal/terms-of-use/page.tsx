@@ -4,24 +4,26 @@ import React from "react";
 const TermsOfUse = () => {
   return (
     <>
-      <section id="termsofuse" className="pt-40">
-        {/* GRID/DOT BACKGROUND */}
-        <div className="absolute left-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.1]">
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
-        </div>
+      <div id="termsofuse" className="pt-40 font-lexendDeca font-light">
+        <header>
+          {/* GRID/DOT BACKGROUND */}
+          {/* <div className="absolute left-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.1]">
+            <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
+          </div> */}
 
-        <h1 className="heading relative block !font-extrabold uppercase dark:hidden">
-          <span className="relative inline-block rounded-lg bg-gradient-to-r from-indigo-500 to-purple px-3 py-2 text-white">
-            Terms of Use
-          </span>
-        </h1>
-        <h1 className="heading relative hidden !font-extrabold uppercase dark:block">
-          <span className="text-purple">Terms of Use</span>
-        </h1>
-        <h1 className="relative mb-16 items-center justify-center py-4 text-center text-lg text-black-100 dark:text-white">
-          Last updated: July 27, 2024
-        </h1>
-        <div className="relative z-10 text-xl">
+          <h1 className="heading relative block !font-extrabold uppercase dark:hidden">
+            <span className="relative inline-block rounded-lg bg-gradient-to-r from-indigo-500 to-purple px-3 py-2 text-white">
+              Terms of Use
+            </span>
+          </h1>
+          <h1 className="heading relative hidden !font-extrabold uppercase dark:block">
+            <span className="text-purple">Terms of Use</span>
+          </h1>
+          <p className="relative mb-16 items-center justify-center py-4 text-center text-lg text-black-100 dark:text-white">
+            Last updated: August 2024
+          </p>
+        </header>
+        <main className="relative z-10 text-xl">
           <p>
             These terms and conditions outline the rules and regulations for the
             use of Celeste Consulting&#x27;s Website, located at
@@ -245,14 +247,12 @@ const TermsOfUse = () => {
             allowed for linking absent a trademark license agreement.
           </p>
           <br />
-          <br />
           <h1 className="text-3xl">iFrames</h1>
           <p>
             Without prior approval and written permission, you may not create
             frames around our Webpages that alter in any way the visual
             presentation or appearance of our Website.
           </p>
-          <br />
           <br />
           <h1 className="text-3xl">Content Liability</h1>
           <p>
@@ -264,19 +264,17 @@ const TermsOfUse = () => {
             or other violation of, any third party rights.
           </p>
           <br />
-          <br />
           <h1 className="text-3xl">Your Privacy</h1>
           <p>
             Please read{" "}
             <Link
-              href={"/privacypolicy"}
+              href={"/legal/privacy-policy"}
               target="_blank"
               className="text-purple hover:font-bold hover:dark:text-purpledark"
             >
               Privacy Policy
             </Link>
           </p>
-          <br />
           <br />
           <h1 className="text-3xl">Reservation of Rights</h1>
           <p>
@@ -344,8 +342,8 @@ const TermsOfUse = () => {
             website are provided free of charge, we will not be liable for any
             loss or damage of any nature.
           </p>
-        </div>
-      </section>
+        </main>
+      </div>
     </>
   );
 };

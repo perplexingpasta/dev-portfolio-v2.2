@@ -34,10 +34,9 @@ const Hero = () => {
       </div>
 
       {/* GRID/DOT BACKGROUND */}
-      <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.05]">
-        {/* Radial gradient for the container to give a faded look */}
+      {/* <div className="absolute left-0 top-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.05]">
         <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
-      </div>
+      </div> */}
 
       <div className="relative z-10 my-5 flex justify-center md:my-12">
         <div className="flex max-w-[89vw] flex-col items-center justify-center md:max-w-2xl lg:max-w-[60vw]">
@@ -46,27 +45,23 @@ const Hero = () => {
           </h1> */}
 
           {/* HERO BIG TEXT */}
-          <div className="mx-auto hidden max-w-4xl px-4 dark:block lg:mb-10">
-            <h1 className="text-center text-4xl font-extrabold uppercase tracking-wide text-white md:text-5xl md:!leading-tight lg:text-6xl lg:!leading-snug">
-              Medical Marketing to Grow your{" "}
+          <div className="mx-auto hidden max-w-5xl px-4 dark:block lg:mb-10">
+            <h1 className="mt-24 text-center text-4xl font-extrabold uppercase tracking-wide text-white md:text-5xl md:!leading-tight lg:text-6xl lg:!leading-snug">
+              Medical Marketing <br className="hidden lg:block" /> to Grow your{" "}
+              <br className="hidden lg:block" />
               <span className="gradient-text animate-gradient font-black text-transparent">
                 Dermatology Practice
               </span>
             </h1>
-            {/* <TextGenerateEffect
-              className="text-center text-[40px] md:text-5xl lg:text-6xl"
-              words="Medical Marketing to Grow your Dermatology Practice"
-              // words="Helping Dermatologists Acquire Consistent, Predictable & Loyal Patients"
-            /> */}
           </div>
-          <div className="dark:hidden lg:mb-10">
+          <div className="mt-24 dark:hidden lg:mb-10">
             <HeroHighlightDemo />
           </div>
 
           {/* HI WE ARE */}
-          <p className="my-10 text-center font-lexendDeca text-base md:mt-14 md:text-lg md:tracking-wider lg:text-2xl">
+          <p className="my-10 mt-32 text-center font-lexendDeca text-base font-light text-black-100 dark:text-white md:text-lg md:tracking-wider lg:my-0 lg:mt-40 lg:text-xl">
             Hi! We&apos;re{" "}
-            <span className="font-semibold">Céleste Consulting</span> ✨
+            <span className="font-medium">Céleste Consulting</span> ✨
             <br /> We help Dermatologists with Consistent, Predictable & Loyal
             Patient Acquisition
           </p>
