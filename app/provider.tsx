@@ -32,9 +32,10 @@
 import posthog from 'posthog-js'
 import { PostHogProvider } from 'posthog-js/react'
 import * as React from 'react'
-import { ThemeProvider as NextThemesProvider } from 'next-themes'
+import { ThemeProvider as NextThemesProvider, useTheme } from 'next-themes'
 import { type ThemeProviderProps } from 'next-themes/dist/types'
 import { Partytown } from '@builder.io/partytown/react'
+import { MantineProvider } from '@mantine/core'
 
 const POSTHOG_KEY = process.env.NEXT_PUBLIC_POSTHOG_KEY || '';
 const POSTHOG_HOST = process.env.NEXT_PUBLIC_POSTHOG_HOST || '';
@@ -44,11 +45,21 @@ type CombinedProviderProps = ThemeProviderProps & {
 }
 
 export function CombinedProvider({ children, ...props }: CombinedProviderProps) {
+  const { theme, setTheme } = useTheme()
   return (
     <>
       <Partytown debug={true} />
       <PostHogProvider client={posthog}>
-        <NextThemesProvider {...props}>{children}</NextThemesProvider>
+        <NextThemesProvider {...props}>
+          {/* Added this to tell mantine which theme is being used for pricing page*/}
+        <MantineProvider
+        theme={{
+          colorScheme: theme === 'dark' ? 'dark' : 'light',
+        }}
+        >
+          {children}
+        </MantineProvider>
+          </NextThemesProvider>
       </PostHogProvider>
     </>
   )

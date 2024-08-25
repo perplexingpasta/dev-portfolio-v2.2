@@ -23,7 +23,7 @@ const About = () => {
 
         <main>
           <section>
-            
+            <p></p>
           </section>
         </main>
       </div>

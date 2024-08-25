@@ -1,12 +1,11 @@
-// 1.3mb in 196ms, 100, 100
 import PricingContainerDark from "@/components/PricingContainerDark";
 import PricingContainerLight from "@/components/PricingContainerLight";
 import MagicButton from "@/components/ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa6";
 import Link from "next/link";
 import LitUpButton from "@/components/ui/LitUpButton";
-import PricingContainerNotion from "@/components/PricingContainerNotion";
 import dynamic from "next/dynamic";
+import PricingContainer from "@/components/PricingContainer";
 
 const DynamicFAQs = dynamic(() => import("@/components/PricingFAQ"), {
   ssr: false,
@@ -14,31 +13,27 @@ const DynamicFAQs = dynamic(() => import("@/components/PricingFAQ"), {
 
 const Pricing = () => {
   return (
-    <div className="pt-40" id="pricing">
-      <header>
-        {/* GRID/DOT BACKGROUND */}
-        {/* <div className="absolute left-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.05]">
-          <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black-100" />
-        </div> */}
-        <h1 className="heading !normal-case relative pt-12">
+    <div className="pt-12 md:pt-[6.5rem]" id="pricing">
+      {/* <header>
+        <h1 className="heading relative pt-4 !normal-case">
           Everything you need for{" "}
-          <span className="text-purpledark dark:text-purple">
+          <span className="text-[#7F85E4]">
             best in class{" "}
           </span>{" "}
           service
         </h1>
-      </header>
+      </header> */}
       <main>
-        <section className="relative flex items-center justify-center pt-10 dark:hidden">
+        <section className="relative flex items-center justify-center pt-10">
+          <PricingContainer />
+        </section>
+        {/* <section className="relative flex items-center justify-center pt-10 dark:hidden">
           <PricingContainerLight />
         </section>
         <section className="relative hidden items-center justify-center pt-10 dark:flex">
           <PricingContainerDark />
-        </section>
-        {/* <div className="relative flex items-center justify-center pt-10">
-        <PricingPreline />
-      </div> */}
-        <section className="mt-10 flex flex-col items-center justify-center md:mt-20">
+        </section> */}
+        <section className="mt-10 flex flex-col items-center justify-center">
           <Link
             href="https://calendly.com/celeste-consulting/strategy-session-w-celeste-consulting"
             target="_blank"
@@ -70,7 +65,7 @@ const Pricing = () => {
             <span className="text-purple">FAQs</span>
           </h1>
 
-          <div className="relative mt-10 md:mt-20">
+          <div className="relative my-10 md:mt-20">
             <DynamicFAQs />
           </div>
         </section>

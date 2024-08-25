@@ -88,13 +88,18 @@ added subscribe section in home ✅
 default mode is light ✅
 grid&dotbg abstracted ✅
 
+hero light mode mobile view ✅
+completely reimagined pricing section ✅
+single pricing file ✅
+finished contact us page ✅
+
+
+make popup modal telling users about free website offer on homepage & with the link to fill google form
 react hot toast in subscribe
 receive the emails in subscribe
 in pleiades show 5 steps and put CTA
 
-finish up implementing mode toggle
 cookie accept
-implement form
 do seo
 
 ----------------------------------------------------------------------------------------

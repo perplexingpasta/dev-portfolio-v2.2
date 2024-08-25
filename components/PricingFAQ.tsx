@@ -13,13 +13,13 @@ const PricingFAQ = () => {
         aria-label="How are these suites ordered? What's the main difference?"
         title="How are these suites ordered? What's the main difference?"
       >
-        <div className="text-white-100">
+        <div className="text-gray-700 dark:text-white-100">
           We&apos;ve designed these suites in order of how committed you want to
           be with growing your practice and getting in more patients as a
           result. If you&apos;re unsure of our services or whether you&apos;ve
           got committment issues, we suggest you to try our{" "}
-          <span className="font-bold dark:text-purple">Foundation Suite</span>.
-          It&apos;s priced adeptly and you&apos;ll love it,guaranteed. But if
+          <span className="font-bold dark:text-purple">Essentials Suite</span>.
+          It&apos;s priced adeptly and you&apos;ll love it, guaranteed. But if
           you have the guts or are determined enough to succeed, we highly
           recommend you to go for the{" "}
           <span className="font-bold dark:text-purple">Professional Suite</span>
@@ -28,13 +28,13 @@ const PricingFAQ = () => {
       </AccordionItem>
       <AccordionItem
         key="2"
-        aria-label="I don't understand the payment model of the Foundation Suite"
-        title="I don't understand the payment model of the Foundation Suite"
+        aria-label="What are guaranteed appointments?"
+        title="What are guaranteed appointments?"
       >
-        <div className="text-white-100">
-          We don&apos;t understand it either. In all seriousness, you only have
-          to pay ₹5080 once and we&apos;ll work in that for a year. It&apos;s
-          not a monthly payment. You only pay once and that&apos;s ₹5080.
+        <div className="text-gray-700 dark:text-white-100">
+          In each tier we guarantee a particular number of appointments. An appointment is by definition a person who has shown interest in your ad and has booked a time and date for appointment to your clinic. This marks 1 appointment. After this, we ensure that the appointment is seen through and the person actually comes for paid consultation. That said, we only guarantee appointments if you follow everything as we say.
+          <br />
+          In the rare event that we can&apos;t hit our guaranteed appointment goal for the month, we&apos;ll keep working with you for free until we get you those guaranteed number of appointments.
         </div>
       </AccordionItem>
       <AccordionItem
@@ -42,7 +42,7 @@ const PricingFAQ = () => {
         aria-label="What are business emails?"
         title="What are business emails?"
       >
-        <div className="text-white-100">
+        <div className="text-gray-700 dark:text-white-100">
           Business emails are very essential for your profession. They&apos;re
           made from your domain so if you get dradamsmith.com as your domain for
           your website, you can have help@dradamsmith.com or
@@ -58,7 +58,7 @@ const PricingFAQ = () => {
         aria-label="What are persuasive landing pages?"
         title="What are persuasive landing pages?"
       >
-        <div className="text-white-100">
+        <div className="text-gray-700 dark:text-white-100">
           Only the greatest thing ever! As far as advertising is concerned
           anyways. Here, based on your ad campaign we make landing pages (think
           of them as a single page website on the web). So after someone
@@ -75,7 +75,7 @@ const PricingFAQ = () => {
         aria-label="What features will I get in the website?"
         title="What features will I get in the website?"
       >
-        <div className="text-white-100">
+        <div className="text-gray-700 dark:text-white-100">
           All our websites will have the following features. Of course, the
           professional tiers will have more advanced features but these are the
           common ones found across all.
@@ -103,7 +103,7 @@ const PricingFAQ = () => {
         aria-label="What is the difference between the Advanced Website and the Professional Website?"
         title="What is the difference between the Advanced Website and the Professional Website?"
       >
-        <div className="text-white-100">
+        <div className="text-gray-700 dark:text-white-100">
           They both are made to supplement the ad campaigns for their tiers
           respectively. In the starting tiers, an advanced website will suffice
           the traffic that you will receive and will have extraordinary features
@@ -122,7 +122,7 @@ const PricingFAQ = () => {
         aria-label="What are strategy meetings?"
         title="What are strategy meetings?"
       >
-        <div className="text-white-100">
+        <div className="text-gray-700 dark:text-white-100">
           In our professional tiers, we provide strategy meetings, the frequency
           of which is monthly for the{" "}
           <span className="font-bold dark:text-purple">Professional Suite</span>{" "}
