@@ -1,15 +1,16 @@
 import { FloatingNav3 } from "@/components/ui/FloatingNav3";
 import { navItems } from "@/data/index2";
 import React from "react";
-
 import dynamic from "next/dynamic";
 import GridAndDotBg from "@/components/ui/GridAndDotBg";
-import CookieBanner from "@/components/ui/CookieBanner";
 
 const DynamicFooter = dynamic(() => import("@/components/Footer3"), {
   ssr: false,
 });
 const DynamicWhatsapp = dynamic(() => import("@/components/Whatsapp"), {
+  ssr: false,
+});
+const DynamicCookie = dynamic(() => import("@/components/CookieConsent"), {
   ssr: false,
 });
 
@@ -20,8 +21,8 @@ const layout = ({ children }: { children: React.ReactNode }) => {
         <div className="w-full max-w-7xl">
           <FloatingNav3 navItems={navItems} />
           <GridAndDotBg />
-          {/* <CookieBanner /> */}
           {children}
+          <DynamicCookie />
           <DynamicWhatsapp />
         </div>
       </div>
