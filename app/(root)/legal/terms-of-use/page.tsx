@@ -4,7 +4,7 @@ import React from "react";
 const TermsOfUse = () => {
   return (
     <>
-      <div id="termsofuse" className="pt-40 font-lexendDeca font-light">
+      <div id="termsofuse" className="pt-40 font-light">
         <header>
           {/* GRID/DOT BACKGROUND */}
           {/* <div className="absolute left-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.1]">
@@ -20,10 +20,10 @@ const TermsOfUse = () => {
             <span className="text-purple">Terms of Use</span>
           </h1>
           <p className="relative mb-16 items-center justify-center py-4 text-center text-lg text-black-100 dark:text-white">
-            Last updated: August 2024
+            Last updated: September 2024
           </p>
         </header>
-        <main className="relative z-10 text-xl">
+        <main className="relative z-10 text-xl font-lexendDeca">
           <p>
             These terms and conditions outline the rules and regulations for the
             use of Celeste Consulting&#x27;s Website, located at

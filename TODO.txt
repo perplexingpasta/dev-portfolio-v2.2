@@ -92,10 +92,14 @@ hero light mode mobile view ✅
 completely reimagined pricing section ✅
 single pricing file ✅
 finished contact us page ✅
-
 cookie accept ✅
 
-add gsap
+added svg icons in footer contact links ✅
+privacy policy lexend font ✅
+
+use lenis smooth scroll
+put its citations in all marketing directories
+
 make popup modal telling users about free website offer on homepage & with the link to fill google form
 react hot toast in subscribe
 receive the emails in subscribe

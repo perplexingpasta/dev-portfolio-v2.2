@@ -4,7 +4,7 @@ import React from "react";
 const PrivacyPolicy = () => {
   return (
     <>
-      <div id="privacypolicy" className="pt-40 font-lexendDeca font-light">
+      <div id="privacypolicy" className="pt-40 font-light">
         <header>
           {/* GRID/DOT BACKGROUND */}
           {/* <div className="absolute left-0 flex h-screen w-full items-center justify-center bg-white bg-grid-black/[0.05] dark:bg-black-100 dark:bg-grid-white/[0.1]">
@@ -20,11 +20,11 @@ const PrivacyPolicy = () => {
             <span className="text-purple">Privacy Policy</span>
           </h1>
           <p className="relative mb-16 items-center justify-center py-4 text-center text-lg text-black-100 dark:text-white">
-            Last updated: August 2024
+            Last updated: September 2024
           </p>
         </header>
 
-        <main className="relative text-xl">
+        <main className="relative text-xl font-lexendDeca">
           <p>
             This Privacy Policy describes Our policies and procedures on the
             collection, use and disclosure of Your information when You use the
